@@ -1,119 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lumi - Welcome</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-    }
-    .container {
-      max-width: 400px;
-      margin: auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #ccc;
-    }
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    .section {
-      background: #f6f6f6;
-      padding: 10px;
-      margin-top: 15px;
-      border-radius: 5px;
-    }
-    input[type="text"], input[type="email"] {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 14px;
-    }
-    .voice-icon {
-      float: right;
-      margin-top: -40px;
-      margin-right: 10px;
-      cursor: pointer;
-      width: 24px;
-    }
-    button {
-      width: 100%;
-      padding: 12px;
-      font-weight: bold;
-      font-size: 16px;
-      color: white;
-      background-color: #f77f00;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    @media (max-width: 480px) {
-      .container {
-        border: none;
-        box-shadow: none;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
     <div class="logo">
-      <img src="images/lumi-icon.png" alt="Lumi Icon">
+      <img src="images/lumi-icon.png" alt="Lumi Icon" />
       <h2>Lumi</h2>
     </div>
 
-    <div class="section">Hi! I’m Lumi, your study buddy! Let’s get started!</div>
+    <div class="section intro">Hi! I’m Lumi, your study buddy! Let’s get started!</div>
 
     <div class="section">
-      📚 Could you please provide your Student ID?
-      <input type="text" id="studentId" placeholder="Student ID">
-      <img class="voice-icon" src="images/voice-wave-icon.png" onclick="startVoice('studentId')">
+      📘 Could you please provide your Student ID?
+      <div class="input-container">
+        <input type="text" id="studentId" placeholder="Student ID" />
+        <img class="voice-icon" src="images/voice-memos.png" onclick="startVoice('studentId')" />
+      </div>
     </div>
 
     <div class="section">
       📱 And your phone number?
-      <input type="text" id="phoneNumber" placeholder="Phone Number">
-      <img class="voice-icon" src="images/voice-wave-icon.png" onclick="startVoice('phoneNumber')">
+      <div class="input-container">
+        <input type="text" id="phoneNumber" placeholder="Phone Number" />
+        <img class="voice-icon" src="images/voice-memos.png" onclick="startVoice('phoneNumber')" />
+      </div>
     </div>
 
     <div class="section">
-      📧 Lastly, what’s your email address?
-      <input type="email" id="email" placeholder="Email Address">
-      <img class="voice-icon" src="images/voice-wave-icon.png" onclick="startVoice('email')">
+      📨 Lastly, what’s your email address?
+      <div class="input-container">
+        <input type="email" id="email" placeholder="Email Address" />
+        <img class="voice-icon" src="images/voice-memos.png" onclick="startVoice('email')" />
+      </div>
     </div>
 
     <button type="submit">Submit</button>
   </div>
 
-  <script>
-    function startVoice(fieldId) {
-      const recognition = new(window.SpeechRecognition || window.webkitSpeechRecognition)();
-      recognition.lang = 'en-US';
-      recognition.interimResults = false;
-      recognition.maxAlternatives = 1;
-
-      recognition.start();
-      recognition.onresult = function(event) {
-        const transcript = event.results[0][0].transcript;
-        document.getElementById(fieldId).value = transcript;
-      };
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
