@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  hr {
+    margin: 20px 0;
+    border: 0.5px solid #ccc;
+  }
+  
+  .role-box h2 {
+    margin-bottom: 5px;
+  }
+  
+  .role-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    background-color: #fef9f2;
+    border: 1px solid #f3e2c3;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .role-btn:hover {
+    background-color: #ffa500;
+    color: white;
+  }
+  
