@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Lumi a New Question</title>
+    <link rel="stylesheet" href="css/ask-lumi.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/lumi-icon.png" alt="Lumi Logo" class="lumi-logo" />
+            <h1>Ask Lumi a New Question</h1>
+        </header>
+        <main>
+            <textarea id="question" placeholder="Ask your question here..."></textarea>
+            <button onclick="startVoice('question')" class="button-orange">🎤 Voice Input</button>
+            <button onclick="respondToUser()" class="button-orange">Submit</button>
+            
+            <div id="response"></div>
+          
+        </main>
+    </div>
+    <script src="js/ask-lumi.js"></script>
+</body>
+</html>
