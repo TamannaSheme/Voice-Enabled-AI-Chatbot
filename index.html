@@ -5,44 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lumi - Welcome</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
-  <div class="container">
+  <div class="form-card">
     <div class="logo">
       <img src="images/lumi-icon.png" alt="Lumi Icon" />
       <h2>Lumi</h2>
     </div>
 
-    <div class="section intro">Hi! I’m Lumi, your study buddy! Let’s get started!</div>
+    <div class="intro">Hi! I’m Lumi, your study buddy! Let’s get started!</div>
 
     <div class="section">
-      📘 Could you please provide your Student ID?
+      <label for="studentId">📘 Could you please provide your Student ID?</label>
       <div class="input-container">
         <input type="text" id="studentId" placeholder="Student ID" />
-        <img class="voice-icon" src="images/voice-memos.png" onclick="startVoice('studentId')" />
+        <img src="images/voice-memos.png" class="voice-icon" onclick="startVoice('studentId')" />
       </div>
     </div>
 
     <div class="section">
-      📱 And your phone number?
+      <label for="phoneNumber">📱 And your phone number?</label>
       <div class="input-container">
         <input type="text" id="phoneNumber" placeholder="Phone Number" />
-        <img class="voice-icon" src="images/voice-memos.png" onclick="startVoice('phoneNumber')" />
+        <img src="images/voice-memos.png" class="voice-icon" onclick="startVoice('phoneNumber')" />
       </div>
     </div>
 
     <div class="section">
-      📨 Lastly, what’s your email address?
+      <label for="email">📧 Lastly, what’s your email address?</label>
       <div class="input-container">
         <input type="email" id="email" placeholder="Email Address" />
-        <img class="voice-icon" src="images/voice-memos.png" onclick="startVoice('email')" />
+        <img src="images/voice-memos.png" class="voice-icon" onclick="startVoice('email')" />
       </div>
     </div>
 
-    <button onclick="redirectToRolePage()">Submit</button>
-
+    <button class="button-orange" onclick="redirectToRolePage()">Submit</button>
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="js/ask-lumi.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
