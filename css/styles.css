@@ -74,3 +74,18 @@ input[type="email"] {
 .button-orange:hover {
   background-color: #e36800;
 }
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-container input {
+  flex: 1;
+}
+
+.voice-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
