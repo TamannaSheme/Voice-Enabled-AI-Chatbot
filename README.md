@@ -73,4 +73,7 @@ All rights reserved by the project team.
 ## 👩‍💻 Developed By
 
 - Syeda Tamanna Sheme – Front-End Developer  
-- [Include your team members here]
+- Tanvir Iqbal	- Backend Developer
+- Hansi Nipunika Panwillaarachchi Kotudura Bandanage	- Backend Developer
+- Afreen Begum - Business Analyst
+
