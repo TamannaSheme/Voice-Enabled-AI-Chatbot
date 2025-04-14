@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .role-card {
+    width: 100%;
+    max-width: 420px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo h2 {
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  .welcome-msg {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
