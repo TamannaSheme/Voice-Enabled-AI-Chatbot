@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Settings</title>
+  <link rel="stylesheet" href="css/account_setting.css">
+</head>
+<body>
+  <div class="settings-container">
+    <div class="header">
+      <span class="icon">👤</span>
+      <h2>Account</h2>
+    </div>
+
+    <div class="setting-group">
+      <p>Name</p>
+      <div class="static-text">Syeda Tamanna Sheme</div>
+    </div>
+
+    <div class="setting-group">
+      <p>Email</p>
+      <div class="static-text">syedatamannasheme@gmail.com</div>
+    </div>
+
+    <div class="setting-group password-group">
+      <p>Password <a href="#" class="change-link">Change</a></p>
+      <div class="static-text">●●●●●●</div>
+    </div>
+
+    <div class="setting-group">
+      <p>Linked Accounts</p>
+      <label><input type="radio" name="linked-accounts"> Google</label>
+      <label><input type="radio" name="linked-accounts"> Apple</label>
+      <label><input type="radio" name="linked-accounts"> Two-Factor Authentication</label>
+    </div>
+
+    <div class="button-group">
+      <button id="logout-btn" class="secondary-btn">Logout</button>
+      <button id="save-btn" class="primary-btn">Save</button>
+    </div>
+
+    <div class="back-link">
+      <a href="settings.html">&#8592; Back to Settings</a>
+    </div>
+  </div>
+
+  <script src="js/account_setting.js"></script>
+</body>
+</html>
