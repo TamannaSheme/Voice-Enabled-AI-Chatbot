@@ -1,8 +1,10 @@
+require('dotenv').config();
+
 module.exports = {
-  host: "https://students-team-vvj1dqxd.testrail.io",
+  host: "https://chatbotv1.testrail.io",
   username: "ssheme@students.federation.edu.au",
-  password: "HDxRmU!N8z@qJZZ",
+  password: process.env.TESTRAIL_TOKEN,
   projectId: 1,
   suiteId: 1,
-  runName: "Jest Automated Test Run - Voice Chatbot"
+  runName: "Jest Secure Run - .env Protected"
 };
