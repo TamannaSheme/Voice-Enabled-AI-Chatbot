@@ -1,16 +1,25 @@
 {
-  "name": "voice-enabled-ai-chatbot-testing",
+  "name": "jest-testrail-integration",
   "version": "1.0.0",
-  "description": "Sample project for Jest and ESLint setup",
-  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "devDependencies": {
-    "eslint": "^8.35.0",
-    "jest": "^29.5.0",
-    "jest-testrail": "^2.2.0"
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.0.0"
+  },
+  "description": "A voice-integrated AI chatbot designed to assist users within a Moodle-based Learning Management System (LMS). Built with a focus on accessibility, real-time interaction, and user role customization.",
+  "main": "axios_post_example.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC"
 }
