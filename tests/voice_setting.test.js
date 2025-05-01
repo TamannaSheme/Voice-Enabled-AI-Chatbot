@@ -4,14 +4,14 @@
 
 const fs = require('fs');
 const path = require('path');
-const html = fs.readFileSync(path.resolve(__dirname, './voice_setting.html'), 'utf8');
+const html = fs.readFileSync(path.resolve(__dirname, '../voice_setting.html'), 'utf8');
 
 describe('Voice Settings Page', () => {
   let container;
 
   beforeEach(() => {
     document.body.innerHTML = html;
-    require('./voice_setting.js'); // load JS functionality
+    require('../js/voice_setting.js'); // load JS functionality
     container = document.body;
   });
 
