@@ -1,30 +1,32 @@
-const axios = require('axios');
+const axios = require("axios");
+const fs = require("fs");
+const path = require("path");
 
-// Your credentials
-// const email = 'syedatamannasheme@gmail.com';
-//const apiKey = 'ATATT3xFfGF0A6qyHjqX8WUWwmiYV_1dn86OuryCjUJ6qaKLYwkhljiW2JeEUvOyA8xd39NM0SGsqEP7ar03ZuCcXLMwVV43JrwNRSBqAAcWpNn20vNMTyO9S8N-V_02lKXmngUszQRsZkbMD9MApROMOYQrc5C_yCmdSvNOnr2Rc9BG7i-Udyc=92B0EA29';
-// Encode the email:apiKey to base64
-const authToken = Buffer.from(`${email}:${apiKey}`).toString('base64');
+const testRailUrl = "https://chatbotv1.testrail.io";
+const runId = 1; // Update with your actual test run ID
+const username = "syedatamannasheme@gmail.com";
+const apiKey = "R9g0z80MyMtVWOMPbp2/-HyNRUhiS7TOSnGAmcxXb";
 
-const headers = {
-  'Content-Type': 'application/json',
-  'Authorization': `Basic ${authToken}`
-};
+const dataPath = path.join(__dirname, "testrail_results.json");
+if (!fs.existsSync(dataPath)) {
+  console.error("❌ No test result file found!");
+  process.exit(1);
+}
 
-// Your TestRail API endpoint and payload
-const url = 'https://chatbotv1.testrail.io/index.php?/api/v2/add_run/1';
+const testResults = JSON.parse(fs.readFileSync(dataPath, "utf8"));
 
-const payload = {
-  suite_id: 1,
-  name: "Automated Run from Jest JSON",
-  include_all: false,
-  case_ids: []
-};
-
-axios.post(url, payload, { headers })
-  .then(response => {
-    console.log('✅ Test run created:', response.data);
-  })
-  .catch(error => {
-    console.error('❌ Error:', error.response?.data || error.message);
-  });
+axios.post(`${testRailUrl}/index.php?/api/v2/add_results_for_cases/${runId}`, testResults, {
+  auth: {
+    username: username,
+    password: apiKey
+  },
+  headers: {
+    "Content-Type": "application/json"
+  }
+})
+.then((response) => {
+  console.log("✅ Successfully uploaded test results to TestRail");
+})
+.catch((error) => {
+  console.error("❌ Failed to upload test results:", error.response?.data || error.message);
+});

@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "case_id": 97,
+      "status_id": 1,
+      "comment": "Test passed via automation"
+    },
+    {
+      "case_id": 101,
+      "status_id": 1,
+      "comment": "Test passed via automation"
+    },
+    {
+      "case_id": 102,
+      "status_id": 1,
+      "comment": "Test passed via automation"
+    },
+    {
+      "case_id": 103,
+      "status_id": 5,
+      "comment": "Test failed via automation"
+    },
+    {
+      "case_id": 94,
+      "status_id": 5,
+      "comment": "Test failed via automation"
+    },
+    {
+      "case_id": 95,
+      "status_id": 5,
+      "comment": "Test failed via automation"
+    },
+    {
+      "case_id": 96,
+      "status_id": 5,
+      "comment": "Test failed via automation"
+    }
+  ]
+}

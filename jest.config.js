@@ -1,3 +1,4 @@
 module.exports = {
-  testMatch: ["**/*.test.js"]
+  testEnvironment: 'jsdom',
+  testMatch: ['**/tests/**/*.test.js']
 };
