@@ -1,36 +1,38 @@
+
 /**
  * @jest-environment jsdom
  */
-const fs = require('fs');
-const path = require('path');
-const { navigate } = require('../js/settings');
+const fs = require("fs");
+const path = require("path");
 
-let html;
+describe("Settings Page", () => {
+  let html;
+  let container;
 
-beforeAll(() => {
-  html = fs.readFileSync(path.resolve(__dirname, '../settings.html'), 'utf8');
-  document.documentElement.innerHTML = html.toString();
-});
-
-describe('Settings Page', () => {
-  test('should have a section title', () => {
-    const title = document.querySelector('.section-title');
-    expect(title).not.toBeNull();
-    expect(title.textContent).toMatch(/Settings/i);
+  beforeEach(() => {
+    html = fs.readFileSync(path.resolve(__dirname, "../settings.html"), "utf8");
+    document.documentElement.innerHTML = html.toString();
+    require("../js/settings.js");
+    container = document.body;
   });
 
-  test('should have setting items', () => {
-    const items = document.querySelectorAll('.setting-item');
-    expect(items.length).toBeGreaterThan(0);
+  test("[C94] should load the settings page", () => {
+    const heading = container.querySelector("h1");
+    expect(heading).not.toBeNull();
+    expect(heading.textContent).toMatch(/Settings/i);
   });
 
-  test('navigate() function should return correct path', () => {
-    expect(navigate('notification')).toBe('notification.html');
-    expect(navigate('privacy')).toBe('privacy.html');
+  test("[C95] should have an email input and save button", () => {
+    const input = container.querySelector("#email");
+    const button = container.querySelector("#save-btn");
+    expect(input).not.toBeNull();
+    expect(button).not.toBeNull();
   });
 
-  test('logo should be present', () => {
-    const logo = document.querySelector('.logo');
-    expect(logo).not.toBeNull();
+  test("[C96] should show alert on clicking Save", () => {
+    global.alert = jest.fn();
+    const button = container.querySelector("#save-btn");
+    button.click();
+    expect(global.alert).toHaveBeenCalledWith("Settings saved!");
   });
 });
