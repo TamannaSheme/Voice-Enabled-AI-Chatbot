@@ -1,13 +1,11 @@
 {
-  "name": "jest-testrail-integration",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest --reporters=default --reporters=./customJestReporter.js",
-    "test:testrail": "node axios_post_example.js"
-  },
-  "devDependencies": {
-    "jest": "^29.0.0"
-  }
-}
+      "name": "jest-testrail-integration",
+      "version": "1.0.0",
+      "scripts": {
+        "test": "jest --reporters=default --reporters=./customJestReporter.js",
+        "test:testrail": "node axios_post_example.js"
+      },
+      "devDependencies": {
+        "jest": "^29.0.0"
+      }
+    }
