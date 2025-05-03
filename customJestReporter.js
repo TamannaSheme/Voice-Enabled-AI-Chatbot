@@ -1,32 +1,33 @@
-const fs = require("fs");
-const path = require("path");
-
-class CustomTestRailReporter {
-  constructor(globalConfig, options) {
-    this._globalConfig = globalConfig;
-    this._options = options;
-    this.results = [];
+class CustomJestReporter {
+    constructor(globalConfig, options) {
+      this._globalConfig = globalConfig;
+      this._options = options;
+    }
+  
+    onRunComplete(contexts, results) {
+      const fs = require('fs');
+      const path = require('path');
+      const testrailResults = results.testResults.flatMap(suite =>
+        suite.testResults.map(test => ({
+          case_id: extractCaseId(test.title),
+          status_id: test.status === 'passed' ? 1 : 5, // 1 = Passed, 5 = Failed
+          comment: test.failureMessages.join('\n') || 'Test passed.',
+        }))
+      );
+  
+      fs.writeFileSync(
+        path.join(__dirname, 'testrail_results.json'),
+        JSON.stringify({ results: testrailResults }, null, 2)
+      );
+  
+      console.log('✅ TestRail results written to testrail_results.json');
+    }
   }
-
-  onTestResult(test, testResult) {
-    testResult.testResults.forEach((result) => {
-      const title = result.title;
-      const match = title.match(/\[C(\d+)]/);  // looks for [C123] case ID
-      if (match) {
-        this.results.push({
-          case_id: parseInt(match[1], 10),
-          status_id: result.status === "passed" ? 1 : 5,
-          comment: result.status === "passed" ? "Test passed via automation" : "Test failed via automation",
-        });
-      }
-    });
+  
+  function extractCaseId(title) {
+    const match = title.match(/\[C(\d+)\]/);
+    return match ? parseInt(match[1], 10) : null;
   }
-
-  onRunComplete() {
-    const outputPath = path.resolve(__dirname, "testrail_results.json");
-    fs.writeFileSync(outputPath, JSON.stringify({ results: this.results }, null, 2));
-    console.log(`TestRail results written to ${outputPath}`);
-  }
-}
-
-module.exports = CustomTestRailReporter;
+  
+  module.exports = CustomJestReporter;
+  
