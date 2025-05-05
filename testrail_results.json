@@ -1,39 +1,104 @@
 {
   "results": [
     {
-      "case_id": 97,
-      "status_id": 1,
-      "comment": "Test passed via automation"
-    },
-    {
       "case_id": 101,
       "status_id": 1,
-      "comment": "Test passed via automation"
+      "comment": "Test passed."
     },
     {
       "case_id": 102,
       "status_id": 1,
-      "comment": "Test passed via automation"
+      "comment": "Test passed."
     },
     {
       "case_id": 103,
       "status_id": 5,
-      "comment": "Test failed via automation"
+      "comment": "TypeError: global.sendMessage is not a function\n    at Object.sendMessage (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\script.test.js:35:12)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)"
     },
     {
       "case_id": 94,
       "status_id": 5,
-      "comment": "Test failed via automation"
+      "comment": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at Object.toBeNull (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\settings.test.js:21:25)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)"
     },
     {
       "case_id": 95,
       "status_id": 5,
-      "comment": "Test failed via automation"
+      "comment": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at Object.toBeNull (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\settings.test.js:28:23)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)"
     },
     {
       "case_id": 96,
       "status_id": 5,
-      "comment": "Test failed via automation"
+      "comment": "TypeError: Cannot read properties of null (reading 'click')\n    at Object.click (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\settings.test.js:35:12)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)"
+    },
+    {
+      "case_id": 97,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
+    },
+    {
+      "case_id": null,
+      "status_id": 1,
+      "comment": "Test passed."
     }
   ]
 }
