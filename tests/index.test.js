@@ -1,28 +1,37 @@
 const fs = require("fs");
 const path = require("path");
 const { JSDOM } = require("jsdom");
-const { TextEncoder, TextDecoder } = require("util");
 
+// Polyfill for Node <18
+const { TextEncoder, TextDecoder } = require("util");
 global.TextEncoder = TextEncoder;
 global.TextDecoder = TextDecoder;
 
 const html = fs.readFileSync(path.resolve(__dirname, "../index.html"), "utf8");
 
-let dom;
+let dom, document;
 
 beforeEach(() => {
-  dom = new JSDOM(html, { runScripts: "dangerously", resources: "usable" });
-  global.document = dom.window.document;
-  global.window = dom.window;
+  dom = new JSDOM(html);
+  document = dom.window.document;
 });
 
-test("[C001] should have Lumi heading", () => {
-  const heading = document.querySelector("h1");
-  expect(heading).not.toBeNull();
-  expect(heading.textContent).toMatch(/Lumi/i);
-});
+describe("Index Page UI", () => {
+  test("[C001] should have Lumi heading", () => {
+    const heading = document.querySelector("h2");
+    expect(heading).not.toBeNull();
+    expect(heading.textContent).toMatch(/Lumi/i);
+  });
 
-test("[C002] should have 3 role buttons", () => {
-  const buttons = document.querySelectorAll(".role-btn");
-  expect(buttons.length).toBe(3);
+  test("[C002] should have studentId, phoneNumber, and email fields", () => {
+    expect(document.querySelector("#studentId")).not.toBeNull();
+    expect(document.querySelector("#phoneNumber")).not.toBeNull();
+    expect(document.querySelector("#email")).not.toBeNull();
+  });
+
+  test("[C003] should have a submit button", () => {
+    const submitBtn = document.querySelector(".button-orange");
+    expect(submitBtn).not.toBeNull();
+    expect(submitBtn.textContent).toMatch(/Submit/i);
+  });
 });
