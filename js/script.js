@@ -57,3 +57,6 @@ function redirectToRolePage() {
   phoneNumberInput.value = "";
   emailInput.value = "";
 }
+if (typeof module !== "undefined") {
+  module.exports = { redirectToRolePage };
+}

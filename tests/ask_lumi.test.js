@@ -1,56 +1,47 @@
-/**
- * @jest-environment jsdom
- */
+// Polyfill for TextEncoder and TextDecoder
+const { TextEncoder, TextDecoder } = require('util');
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
 
-const fs = require('fs');
-const path = require('path');
-const html = fs.readFileSync(path.resolve(__dirname, '../ask-lumi.html'), 'utf8');
+const fs = require("fs");
+const path = require("path");
+const { JSDOM } = require("jsdom");
 
-describe('Ask Lumi Page', () => {
-  let container;
+let dom, document, container;
 
-  beforeEach(() => {
-    document.body.innerHTML = html;
-    global.respondToUser = function () {
-      const textarea = document.getElementById("question");
-      const question = textarea.value.trim();
-      if (question) {
-        alert("Question submitted: " + question);
-      } else {
-        alert("Please enter a question.");
-      }
-    };
-    global.startVoice = function () {
-      alert("Voice input not implemented yet.");
-    };
-    container = document.body;
+beforeAll(() => {
+  const html = fs.readFileSync(path.resolve(__dirname, "../ask-lumi.html"), "utf8");
+  dom = new JSDOM(html, { runScripts: "dangerously", resources: "usable" });
+  document = dom.window.document;
+  container = document.body;
+});
+
+describe("Ask Lumi Page UI", () => {
+  test("[L101] should have a title and logo", () => {
+    const title = container.querySelector("h1");
+    const logo = container.querySelector("img.lumi-logo");
+    expect(title).not.toBeNull();
+    expect(title.textContent).toMatch(/Ask Lumi a New Question/i);
+    expect(logo).not.toBeNull();
   });
 
-  test('Submit with input shows alert', () => {
-    window.alert = jest.fn();
-    const textarea = container.querySelector('#question');
-    textarea.value = "What is AI?";
-    global.respondToUser();
-    expect(window.alert).toHaveBeenCalledWith("Question submitted: What is AI?");
+  test("[L102] should have a textarea input and two buttons", () => {
+    const textarea = container.querySelector("textarea#question");
+    const buttons = container.querySelectorAll("button.button-orange");
+    expect(textarea).not.toBeNull();
+    expect(buttons.length).toBe(2); // 🎤 and ➤
   });
 
-  test('Submit without input shows warning alert', () => {
-    window.alert = jest.fn();
-    const textarea = container.querySelector('#question');
-    textarea.value = "";
-    global.respondToUser();
-    expect(window.alert).toHaveBeenCalledWith("Please enter a question.");
+  test("[L103] settings button should be present with dropdown", () => {
+    const settingsBtn = container.querySelector(".settings-btn");
+    const dropdown = container.querySelector("#settingsDropdown");
+    expect(settingsBtn).not.toBeNull();
+    expect(dropdown).not.toBeNull();
+    expect(dropdown.querySelectorAll("a").length).toBeGreaterThanOrEqual(2);
   });
 
-  test('Voice input button shows not implemented alert', () => {
-    window.alert = jest.fn();
-    global.startVoice();
-    expect(window.alert).toHaveBeenCalledWith("Voice input not implemented yet.");
-  });
-
-  test('Page loads with required elements', () => {
-    expect(container.querySelector('h1').textContent).toBe("Ask Lumi a New Question");
-    expect(container.querySelector('#question')).toBeTruthy();
-    expect(container.querySelectorAll('button').length).toBeGreaterThanOrEqual(2);
+  test("[L104] chat message container should exist", () => {
+    const chatBox = container.querySelector("#chat-messages");
+    expect(chatBox).not.toBeNull();
   });
 });
