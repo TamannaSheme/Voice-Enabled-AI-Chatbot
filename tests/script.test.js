@@ -1,38 +1,42 @@
-/**
- * @jest-environment jsdom
- */
-const fs = require('fs');
-const path = require('path');
+// Polyfill for TextEncoder and TextDecoder
+const { TextEncoder, TextDecoder } = require('util');
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
 
-describe("Voice Enabled Chatbot UI", () => {
-  let html;
-  let container;
+const fs = require("fs");
+const path = require("path");
+const { JSDOM } = require("jsdom");
 
-  beforeEach(() => {
-    html = fs.readFileSync(path.resolve(__dirname, "../index.html"), "utf8");
-    document.documentElement.innerHTML = html.toString();
-    require("../js/script.js");
-    container = document.body;
-  });
+// Load the correct HTML file with input, button, and chat-box
+const html = fs.readFileSync(path.resolve(__dirname, "../ask_lumi.html"), "utf8");
 
-  test("[C101] should have a title", () => {
-    const title = container.querySelector('h1');
-    expect(title).not.toBeNull();
-    expect(title.textContent).toMatch(/Voice Chatbot/i);
-  });
+let dom, container;
 
-  test("[C102] should have an input and button for sending", () => {
-    const input = container.querySelector('#user-input');
-    const button = container.querySelector('button');
-    expect(input).not.toBeNull();
-    expect(button).not.toBeNull();
-  });
+beforeEach(() => {
+  dom = new JSDOM(html, { runScripts: "dangerously" });
+  container = dom.window.document.body;
+  global.document = dom.window.document;
+  global.window = dom.window;
+  global.sendMessage = require("../js/script.js").sendMessage;
+});
 
-  test("[C103] should append user input to chat box when sendMessage is called", () => {
-    const input = container.querySelector('#user-input');
-    input.value = "Hello";
-    const chatBox = container.querySelector('#chat-box');
-    global.sendMessage();
-    expect(chatBox.innerHTML).toContain("Hello");
-  });
+test("[C101] should have a title", () => {
+  const title = container.querySelector("h1");
+  expect(title).not.toBeNull();
+  expect(title.textContent).toMatch(/Voice Chatbot/i);
+});
+
+test("[C102] should have an input and button for sending", () => {
+  const input = container.querySelector("#user-input");
+  const button = container.querySelector("button");
+  expect(input).not.toBeNull();
+  expect(button).not.toBeNull();
+});
+
+test("[C103] should append user input to chat box when sendMessage is called", () => {
+  const input = container.querySelector("#user-input");
+  const chatBox = container.querySelector("#chat-box");
+  input.value = "Hello";
+  global.sendMessage();
+  expect(chatBox.innerHTML).toContain("Hello");
 });
