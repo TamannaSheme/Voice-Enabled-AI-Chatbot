@@ -11,7 +11,7 @@ describe("Voice Enabled Chatbot UI", () => {
   beforeEach(() => {
     html = fs.readFileSync(path.resolve(__dirname, "../index.html"), "utf8");
     document.documentElement.innerHTML = html.toString();
-    require("../script.js");
+    require("../js/script.js");
     container = document.body;
   });
 

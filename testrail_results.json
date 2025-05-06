@@ -1,139 +1,798 @@
 {
-  "results": [
+  "numFailedTestSuites": 1,
+  "numFailedTests": 4,
+  "numPassedTestSuites": 9,
+  "numPassedTests": 27,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 10,
+  "numTotalTests": 31,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1746449246335,
+  "success": false,
+  "testResults": [
     {
-      "case_id": 101,
-      "status_id": 1,
-      "comment": "Test passed."
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1746449249642,
+        "runtime": 1067,
+        "slow": false,
+        "start": 1746449248575
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\sample.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 18,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "basic sample test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "basic sample test"
+        }
+      ],
+      "failureMessage": null
     },
     {
-      "case_id": 102,
-      "status_id": 1,
-      "comment": "Test passed."
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1746449249689,
+        "runtime": 1099,
+        "slow": false,
+        "start": 1746449248590
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\sample.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 14,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "C3 - Submit Button works",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "C3 - Submit Button works"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "C4 - Email field accepts valid input",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "C4 - Email field accepts valid input"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "C5 - Validation fails on empty form",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "C5 - Validation fails on empty form"
+        }
+      ],
+      "failureMessage": null
     },
     {
-      "case_id": 103,
-      "status_id": 5,
-      "comment": "TypeError: global.sendMessage is not a function\n    at Object.sendMessage (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\script.test.js:35:12)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)"
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1746449249763,
+        "runtime": 1138,
+        "slow": false,
+        "start": 1746449248625
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\navigate.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 18,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "navigate to voice page",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "navigate to voice page"
+        }
+      ],
+      "failureMessage": null
     },
     {
-      "case_id": 111,
-      "status_id": 1,
-      "comment": "Test passed."
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1746449249791,
+        "runtime": 1113,
+        "slow": false,
+        "start": 1746449248678
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\settings.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Settings Page"
+          ],
+          "duration": 50,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Settings Page [C94] should load the settings page",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C94] should load the settings page"
+        },
+        {
+          "ancestorTitles": [
+            "Settings Page"
+          ],
+          "duration": 8,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Settings Page [C95] should have an email input and save button",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C95] should have an email input and save button"
+        },
+        {
+          "ancestorTitles": [
+            "Settings Page"
+          ],
+          "duration": 9,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Settings Page [C96] should show alert on clicking Save",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C96] should show alert on clicking Save"
+        }
+      ],
+      "failureMessage": null
     },
     {
-      "case_id": 112,
-      "status_id": 1,
-      "comment": "Test passed."
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1746449249817,
+        "runtime": 1160,
+        "slow": false,
+        "start": 1746449248657
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\preferences_setting.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Preferences Page"
+          ],
+          "duration": 106,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Preferences Page [C97] should alert on clicking Save",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C97] should alert on clicking Save"
+        }
+      ],
+      "failureMessage": null
     },
     {
-      "case_id": 113,
-      "status_id": 1,
-      "comment": "Test passed."
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1746449249844,
+        "runtime": 1155,
+        "slow": false,
+        "start": 1746449248689
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\script.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Voice Enabled Chatbot UI"
+          ],
+          "duration": 66,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Enabled Chatbot UI [C101] should have a title",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C101] should have a title"
+        },
+        {
+          "ancestorTitles": [
+            "Voice Enabled Chatbot UI"
+          ],
+          "duration": 11,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Enabled Chatbot UI [C102] should have an input and button for sending",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C102] should have an input and button for sending"
+        },
+        {
+          "ancestorTitles": [
+            "Voice Enabled Chatbot UI"
+          ],
+          "duration": 14,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Enabled Chatbot UI [C103] should append user input to chat box when sendMessage is called",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C103] should append user input to chat box when sendMessage is called"
+        }
+      ],
+      "failureMessage": null
     },
     {
-      "case_id": 114,
-      "status_id": 1,
-      "comment": "Test passed."
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1746449249848,
+        "runtime": 1182,
+        "slow": false,
+        "start": 1746449248666
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\voice_setting.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Voice Settings Page"
+          ],
+          "duration": 86,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Settings Page should show alert on Save button click",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should show alert on Save button click"
+        },
+        {
+          "ancestorTitles": [
+            "Voice Settings Page"
+          ],
+          "duration": 17,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Settings Page Enable Voice checkbox should be checked by default",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Enable Voice checkbox should be checked by default"
+        },
+        {
+          "ancestorTitles": [
+            "Voice Settings Page"
+          ],
+          "duration": 15,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Settings Page should allow selecting different speech modes",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should allow selecting different speech modes"
+        },
+        {
+          "ancestorTitles": [
+            "Voice Settings Page"
+          ],
+          "duration": 8,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Settings Page back link should go to settings.html",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "back link should go to settings.html"
+        }
+      ],
+      "failureMessage": null
     },
     {
-      "case_id": 115,
-      "status_id": 1,
-      "comment": "Test passed."
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 7,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1746449249858,
+        "runtime": 1194,
+        "slow": false,
+        "start": 1746449248664
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\notifications_setting.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Notification Settings Page"
+          ],
+          "duration": 83,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Notification Settings Page [C111] should have page title Notifications",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C111] should have page title Notifications"
+        },
+        {
+          "ancestorTitles": [
+            "Notification Settings Page"
+          ],
+          "duration": 15,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Notification Settings Page [C112] should render Push Notification options",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C112] should render Push Notification options"
+        },
+        {
+          "ancestorTitles": [
+            "Notification Settings Page"
+          ],
+          "duration": 9,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Notification Settings Page [C113] should render Email Alert options",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C113] should render Email Alert options"
+        },
+        {
+          "ancestorTitles": [
+            "Notification Settings Page"
+          ],
+          "duration": 9,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Notification Settings Page [C114] should render Sound options",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C114] should render Sound options"
+        },
+        {
+          "ancestorTitles": [
+            "Notification Settings Page"
+          ],
+          "duration": 7,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Notification Settings Page [C115] should have Save button",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C115] should have Save button"
+        },
+        {
+          "ancestorTitles": [
+            "Notification Settings Page"
+          ],
+          "duration": 10,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Notification Settings Page [C116] should alert when Save button is clicked",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C116] should alert when Save button is clicked"
+        },
+        {
+          "ancestorTitles": [
+            "Notification Settings Page"
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Notification Settings Page [C117] should have back to settings link",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "[C117] should have back to settings link"
+        }
+      ],
+      "failureMessage": null
     },
     {
-      "case_id": 116,
-      "status_id": 1,
-      "comment": "Test passed."
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1746449249875,
+        "runtime": 1159,
+        "slow": false,
+        "start": 1746449248716
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\ask_lumi.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page"
+          ],
+          "duration": 57,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Submit with input shows alert",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Submit with input shows alert"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page"
+          ],
+          "duration": 10,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Submit without input shows warning alert",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Submit without input shows warning alert"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page"
+          ],
+          "duration": 6,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Voice input button shows not implemented alert",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Voice input button shows not implemented alert"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page"
+          ],
+          "duration": 9,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Page loads with required elements",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Page loads with required elements"
+        }
+      ],
+      "failureMessage": null
     },
     {
-      "case_id": 117,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": 94,
-      "status_id": 5,
-      "comment": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at Object.toBeNull (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\settings.test.js:21:25)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)"
-    },
-    {
-      "case_id": 95,
-      "status_id": 5,
-      "comment": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at Object.toBeNull (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\settings.test.js:28:23)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)"
-    },
-    {
-      "case_id": 96,
-      "status_id": 5,
-      "comment": "TypeError: Cannot read properties of null (reading 'click')\n    at Object.click (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\settings.test.js:35:12)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)"
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": 97,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
-    },
-    {
-      "case_id": null,
-      "status_id": 1,
-      "comment": "Test passed."
+      "leaks": false,
+      "numFailingTests": 4,
+      "numPassingTests": 0,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1746449249898,
+        "runtime": 1245,
+        "slow": false,
+        "start": 1746449248653
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\account_setting.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 97,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": "password",
+                "expected": "text",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"text\"\u001b[39m\nReceived: \u001b[31m\"password\"\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"text\"\u001b[39m\nReceived: \u001b[31m\"password\"\u001b[39m\n    at Object.toBe (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\account_setting.test.js:28:22)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:106:12)"
+          ],
+          "fullName": "[C120] toggles password visibility",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "[C120] toggles password visibility"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 27,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"Account settings saved successfully!\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"Account settings saved successfully!\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m\n    at Object.toHaveBeenCalledWith (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\account_setting.test.js:37:24)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:106:12)"
+          ],
+          "fullName": "[C121] alerts on save button click",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "[C121] alerts on save button click"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 12,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": "",
+                "expected": "index.html",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"index.html\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"index.html\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\n    at Object.toBe (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\account_setting.test.js:45:32)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:106:12)"
+          ],
+          "fullName": "[C122] redirects to index.html on logout",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "[C122] redirects to index.html on logout"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 9,
+          "failureDetails": [
+            {}
+          ],
+          "failureMessages": [
+            "TypeError: Cannot read properties of null (reading 'click')\n    at Object.click (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\account_setting.test.js:52:12)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:106:12)"
+          ],
+          "fullName": "[C123] redirects to settings.html on back link click",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "[C123] redirects to settings.html on back link click"
+        }
+      ],
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1m[C120] toggles password visibility\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"text\"\u001b[39m\n    Received: \u001b[31m\"password\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 26 |\u001b[39m   expect(input\u001b[33m.\u001b[39mtype)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"password\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 27 |\u001b[39m   toggle\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 28 |\u001b[39m   expect(input\u001b[33m.\u001b[39mtype)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"text\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 29 |\u001b[39m   toggle\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 30 |\u001b[39m   expect(input\u001b[33m.\u001b[39mtype)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"password\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 31 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toBe (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/account_setting.test.js\u001b[39m\u001b[0m\u001b[2m:28:22)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1m[C121] alerts on save button click\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected: \u001b[32m\"Account settings saved successfully!\"\u001b[39m\n\n    Number of calls: \u001b[31m0\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 35 |\u001b[39m   \u001b[36mconst\u001b[39m saveBtn \u001b[33m=\u001b[39m container\u001b[33m.\u001b[39mquerySelector(\u001b[32m\"#save-btn\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 36 |\u001b[39m   saveBtn\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 37 |\u001b[39m   expect(global\u001b[33m.\u001b[39malert)\u001b[33m.\u001b[39mtoHaveBeenCalledWith(\u001b[32m\"Account settings saved successfully!\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 38 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 39 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 40 |\u001b[39m test(\u001b[32m\"[C122] redirects to index.html on logout\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toHaveBeenCalledWith (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/account_setting.test.js\u001b[39m\u001b[0m\u001b[2m:37:24)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1m[C122] redirects to index.html on logout\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"index.html\"\u001b[39m\n    Received: \u001b[31m\"\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 43 |\u001b[39m   \u001b[36mconst\u001b[39m logoutBtn \u001b[33m=\u001b[39m container\u001b[33m.\u001b[39mquerySelector(\u001b[32m\"#logout-btn\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 44 |\u001b[39m   logoutBtn\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 45 |\u001b[39m   expect(window\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mhref)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"index.html\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 46 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 47 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 48 |\u001b[39m test(\u001b[32m\"[C123] redirects to settings.html on back link click\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toBe (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/account_setting.test.js\u001b[39m\u001b[0m\u001b[2m:45:32)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1m[C123] redirects to settings.html on back link click\u001b[39m\u001b[22m\n\n    TypeError: Cannot read properties of null (reading 'click')\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 50 |\u001b[39m   window\u001b[33m.\u001b[39mlocation \u001b[33m=\u001b[39m { href\u001b[33m:\u001b[39m \u001b[32m\"\"\u001b[39m }\u001b[33m;\u001b[39m \u001b[90m// ✅ MOCK HREF\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 51 |\u001b[39m   \u001b[36mconst\u001b[39m backLink \u001b[33m=\u001b[39m container\u001b[33m.\u001b[39mquerySelector(\u001b[32m\".back-link a\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 52 |\u001b[39m   backLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 53 |\u001b[39m   expect(window\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mhref)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"settings.html\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 54 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 55 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.click (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/account_setting.test.js\u001b[39m\u001b[0m\u001b[2m:52:12)\u001b[22m\u001b[2m\u001b[22m\n"
     }
-  ]
+  ],
+  "wasInterrupted": false
 }
