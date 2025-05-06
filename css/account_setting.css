@@ -1,108 +1,55 @@
-/* account_setting.css */
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .settings-container {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    width: 350px;
-    margin-top: 40px;
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .icon {
-    font-size: 28px;
-  }
-  
-  .setting-group {
-    margin-bottom: 20px;
-  }
-  
-  .setting-group p {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .static-text {
-    margin-left: 10px;
-  }
-  
-  .password-group .change-link {
-    font-size: 12px;
-    margin-left: 10px;
-    text-decoration: underline;
-    color: blue;
-    cursor: pointer;
-  }
-  
-  .setting-group label {
-    display: block;
-    margin: 5px 0 5px 10px;
-  }
-  
-  .button-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .primary-btn {
-    background-color: orange;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 48%;
-    font-size: 16px;
-  }
-  
-  .primary-btn:hover {
-    background-color: darkorange;
-  }
-  
-  .secondary-btn {
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 48%;
-    font-size: 16px;
-  }
-  
-  .secondary-btn:hover {
-    background-color: #f5f5f5;
-  }
-  
-  .back-link {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .back-link a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-  }
-  
-  .back-link a:hover {
-    text-decoration: underline;
-  }
-  
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.account-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+input[type="password"] {
+  border: none;
+  font-size: 16px;
+}
+
+a {
+  font-size: 12px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#logout-btn {
+  background-color: #eee;
+}
+
+#save-btn {
+  background-color: orange;
+  color: white;
+}

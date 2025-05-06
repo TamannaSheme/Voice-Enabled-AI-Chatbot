@@ -3,41 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Account Settings</title>
-  <link rel="stylesheet" href="./css/account_setting.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Account</title>
+  <link rel="stylesheet" href="css/account_setting.css" />
 </head>
 <body>
-  <div class="settings-card">
-    <h1><i class="fas fa-user icon"></i> Account</h1>
+  <div class="account-container">
+    <h2><span class="icon">👤</span> Account</h2>
+    <p><strong>Name</strong><br>Syeda Tamanna Sheme</p>
+    <p><strong>Email</strong><br>syedatamannasheme@gmail.com</p>
+    <p>
+      <strong>Password</strong> <a href="#" id="change-link">Change</a><br>
+      <input type="password" id="password-field" value="password" disabled>
+    </p>
 
-    <label>Name</label>
-    <p>Syeda Tamanna Sheme</p>
-
-    <label>Email</label>
-    <p>syedatamannasheme@gmail.com</p>
-
-    <label>Password</label>
-    <div class="password-container">
-      <input type="password" id="password" value="12345678" readonly />
-      <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+    <div>
+      <p><strong>Linked Accounts</strong></p>
+      <label><input type="radio" name="auth" /> Google</label><br>
+      <label><input type="radio" name="auth" /> Apple</label><br>
+      <label><input type="radio" name="auth" /> Two-Factor Authentication</label>
     </div>
 
-    <label>Linked Accounts</label>
-    <div class="radio-group">
-      <label><input type="radio" name="account" /> Google</label><br />
-      <label><input type="radio" name="account" /> Apple</label><br />
-      <label><input type="radio" name="account" /> Two-Factor Authentication</label>
-    </div>
-
-    <div class="btn-group">
+    <div class="buttons">
       <button id="logout-btn">Logout</button>
       <button id="save-btn">Save</button>
     </div>
 
-    <p class="back"><a href="#" id="back-link">← Back to Settings</a></p>
+    <a href="settings.html" id="back-link">← Back to Settings</a>
   </div>
 
-  <script src="js/saccount_setting.js"></script>
+  <script src="js/account.js"></script>
 </body>
 </html>
