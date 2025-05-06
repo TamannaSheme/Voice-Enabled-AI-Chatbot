@@ -1,22 +1,19 @@
-// Polyfill for TextEncoder and TextDecoder
-const { TextEncoder, TextDecoder } = require('util');
-global.TextEncoder = TextEncoder;
-global.TextDecoder = TextDecoder;
-
-global.TextEncoder = require("util").TextEncoder;
-
 const fs = require("fs");
 const path = require("path");
 const { JSDOM } = require("jsdom");
+const { TextEncoder, TextDecoder } = require("util");
+
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
 
 const html = fs.readFileSync(path.resolve(__dirname, "../index.html"), "utf8");
 
-let dom, document, window;
+let dom;
 
 beforeEach(() => {
   dom = new JSDOM(html, { runScripts: "dangerously", resources: "usable" });
-  window = dom.window;
-  document = window.document;
+  global.document = dom.window.document;
+  global.window = dom.window;
 });
 
 test("[C001] should have Lumi heading", () => {
