@@ -1,69 +1,44 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fff;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 400px;
     margin: 60px auto;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: center;
-  }
-  
-  .header {
+}
+
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-  }
-  
-  .logo {
+}
+
+.logo {
     width: 40px;
     height: 40px;
-  }
-  
-  hr {
-    margin: 20px 0;
-    border: 0.5px solid #ccc;
-  }
-  
-  .role-box h2 {
-    margin-bottom: 5px;
-  }
-  
-  .role-btn {
-    width: 100%;
-    padding: 12px;
-    margin: 12px 0;
-    background-color: #fef9f2;
-    border: 1px solid #f3e2c3;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-  
-  .role-btn:hover {
-    background-color: #ffa500;
-    color: white;
-  }
-  .role-card {
+}
+
+.role-card {
     padding: 15px;
-    margin: 10px;
+    margin: 10px 0;
     background-color: #f0f0f0;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
-  }
-  
-  .role-card:hover {
-    background-color: #d4d4d4;
-  }
-  
+}
+
+.role-card:hover {
+    background-color: #ffa500;
+    color: white;
+}

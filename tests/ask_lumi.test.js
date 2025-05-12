@@ -24,7 +24,12 @@ beforeEach(() => {
   dom.window.speechSynthesis = {
     speak: jest.fn(),
   };
-  require('./ask-lumi.js');
+
+  // Load the JS file and make sure it attaches functions to window
+  const script = fs.readFileSync(path.resolve(__dirname, '../js/ask-lumi.js'), 'utf8');
+  const scriptElement = dom.window.document.createElement("script");
+  scriptElement.textContent = script;
+  dom.window.document.body.appendChild(scriptElement);
 });
 
 describe("Ask Lumi Page Testing", () => {
@@ -32,6 +37,8 @@ describe("Ask Lumi Page Testing", () => {
     const questionBox = container.querySelector("#question");
     const chatMessages = container.querySelector("#chat-messages");
     questionBox.value = "What is AI?";
+    
+    // Call the function directly
     dom.window.respondToUser();
     
     expect(chatMessages.innerHTML).toContain("ME");
