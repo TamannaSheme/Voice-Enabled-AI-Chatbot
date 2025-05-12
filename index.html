@@ -15,31 +15,35 @@
 
     <div class="intro">Hi! I’m Lumi, your study buddy! Let’s get started!</div>
 
-    <div class="section">
-      <label for="studentId">📘 Could you please provide your Student ID?</label>
-      <div class="input-container">
-        <input type="text" id="studentId" placeholder="Student ID" />
-        <img src="images/voice-memos.png" class="voice-icon" onclick="startVoice('studentId')" />
+    <form id="welcome-form">
+      <div class="section">
+        <label for="student-id">📘 Could you please provide your Student ID?</label>
+        <div class="input-container">
+          <input type="text" id="student-id" placeholder="Student ID" />
+          <img src="images/voice-memos.png" class="voice-icon" onclick="startVoice('student-id')" />
+        </div>
       </div>
-    </div>
 
-    <div class="section">
-      <label for="phoneNumber">📱 And your phone number?</label>
-      <div class="input-container">
-        <input type="text" id="phoneNumber" placeholder="Phone Number" />
-        <img src="images/voice-memos.png" class="voice-icon" onclick="startVoice('phoneNumber')" />
+      <div class="section">
+        <label for="phone-number">📱 And your phone number?</label>
+        <div class="input-container">
+          <input type="text" id="phone-number" placeholder="Phone Number" />
+          <img src="images/voice-memos.png" class="voice-icon" onclick="startVoice('phone-number')" />
+        </div>
       </div>
-    </div>
 
-    <div class="section">
-      <label for="email">📧 Lastly, what’s your email address?</label>
-      <div class="input-container">
-        <input type="email" id="email" placeholder="Email Address" />
-        <img src="images/voice-memos.png" class="voice-icon" onclick="startVoice('email')" />
+      <div class="section">
+        <label for="email">📧 Lastly, what’s your email address?</label>
+        <div class="input-container">
+          <input type="email" id="email" placeholder="Email Address" />
+          <img src="images/voice-memos.png" class="voice-icon" onclick="startVoice('email')" />
+        </div>
       </div>
-    </div>
 
-    <button class="button-orange" onclick="redirectToRolePage()">Submit</button>
+      <div id="voice-error" class="error-message" style="display: none;">Voice recognition error. Please try again.</div>
+
+      <button type="submit" class="button-orange">Submit</button>
+    </form>
   </div>
 
   <script src="js/script.js"></script>

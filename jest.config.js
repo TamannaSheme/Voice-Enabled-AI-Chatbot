@@ -1,5 +1,5 @@
 module.exports = {
   setupFiles: ["<rootDir>/jest.setup.js"],
-  testEnvironment: "jsdom",
+  testEnvironment: "jest-environment-jsdom",
   reporters: ["default", "./customJestReporter.js"]
 };

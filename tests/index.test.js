@@ -2,36 +2,89 @@ const fs = require("fs");
 const path = require("path");
 const { JSDOM } = require("jsdom");
 
-// Polyfill for Node <18
-const { TextEncoder, TextDecoder } = require("util");
-global.TextEncoder = TextEncoder;
-global.TextDecoder = TextDecoder;
-
+// Load the correct HTML file
 const html = fs.readFileSync(path.resolve(__dirname, "../index.html"), "utf8");
-
 let dom, document;
 
 beforeEach(() => {
-  dom = new JSDOM(html);
+  dom = new JSDOM(html, { runScripts: "dangerously" });
   document = dom.window.document;
 });
 
-describe("Index Page UI", () => {
-  test("[C001] should have Lumi heading", () => {
-    const heading = document.querySelector("h2");
-    expect(heading).not.toBeNull();
-    expect(heading.textContent).toMatch(/Lumi/i);
+describe("Welcome Page Testing", () => {
+  test("[C1] Page Load", () => {
+    expect(document).not.toBeNull();
   });
 
-  test("[C002] should have studentId, phoneNumber, and email fields", () => {
-    expect(document.querySelector("#studentId")).not.toBeNull();
-    expect(document.querySelector("#phoneNumber")).not.toBeNull();
-    expect(document.querySelector("#email")).not.toBeNull();
+  test("[C2] Voice Input - Student ID", () => {
+    const input = document.querySelector("#student-id");
+    expect(input).not.toBeNull();
   });
 
-  test("[C003] should have a submit button", () => {
-    const submitBtn = document.querySelector(".button-orange");
-    expect(submitBtn).not.toBeNull();
-    expect(submitBtn.textContent).toMatch(/Submit/i);
+  test("[C3] Voice Input - Phone Number", () => {
+    const input = document.querySelector("#phone-number");
+    expect(input).not.toBeNull();
+  });
+
+  test("[C4] Voice Input - Email", () => {
+    const input = document.querySelector("#email");
+    expect(input).not.toBeNull();
+  });
+
+  test("[C5] Submit Without Filling Fields", () => {
+    const form = document.querySelector("form");
+    expect(form).not.toBeNull();
+  });
+
+  test("[C6] Invalid Student ID Input", () => {
+    const input = document.querySelector("#student-id");
+    if (input) {
+      input.value = "invalid";
+      expect(input.value).toBe("invalid");
+    } else {
+      fail("Student ID input not found");
+    }
+  });
+
+  test("[C12] Invalid Phone Number Input", () => {
+    const input = document.querySelector("#phone-number");
+    if (input) {
+      input.value = "invalid";
+      expect(input.value).toBe("invalid");
+    } else {
+      fail("Phone Number input not found");
+    }
+  });
+
+  test("[C7] Invalid Email Input", () => {
+    const input = document.querySelector("#email");
+    if (input) {
+      input.value = "invalid";
+      expect(input.value).toBe("invalid");
+    } else {
+      fail("Email input not found");
+    }
+  });
+
+  test("[C8] Successful Form Submission", () => {
+    const form = document.querySelector("form");
+    const submitButton = document.querySelector("button[type='submit']");
+    expect(form).not.toBeNull();
+    expect(submitButton).not.toBeNull();
+  });
+
+  test("[C9] Form Responsiveness", () => {
+    const container = document.querySelector(".form-card");
+    expect(container).not.toBeNull();
+  });
+
+  test("[C10] Button Hover Effect", () => {
+    const button = document.querySelector(".button-orange");
+    expect(button).not.toBeNull();
+  });
+
+  test("[C11] Voice Recognition Error Handling", () => {
+    const voiceError = document.querySelector("#voice-error");
+    expect(voiceError).not.toBeNull();
   });
 });

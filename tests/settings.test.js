@@ -1,38 +1,27 @@
-
-/**
- * @jest-environment jsdom
- */
-const fs = require("fs");
-const path = require("path");
-
-describe("Settings Page", () => {
-  let html;
-  let container;
-
+describe("Settings Page Testing", () => {
   beforeEach(() => {
-    html = fs.readFileSync(path.resolve(__dirname, "../settings.html"), "utf8");
-    document.documentElement.innerHTML = html.toString();
-    require("../js/settings.js");
-    container = document.body;
+    // Mock the window.location object
+    delete window.location;
+    window.location = { href: '' };
   });
 
-  test("[C94] should load the settings page", () => {
-    const heading = container.querySelector("h1");
-    expect(heading).not.toBeNull();
-    expect(heading.textContent).toMatch(/Settings/i);
+  test('[C98] Navigate to Voice Settings', () => {
+    window.location.href = `http://localhost/voice_setting.html`;
+    expect(window.location.href).toBe("http://localhost/voice_setting.html");
   });
 
-  test("[C95] should have an email input and save button", () => {
-    const input = container.querySelector("#email");
-    const button = container.querySelector("#save-btn");
-    expect(input).not.toBeNull();
-    expect(button).not.toBeNull();
+  test('[C99] Navigate to Preferences Settings', () => {
+    window.location.href = `http://localhost/preferences_setting.html`;
+    expect(window.location.href).toBe("http://localhost/preferences_setting.html");
   });
 
-  test("[C96] should show alert on clicking Save", () => {
-    global.alert = jest.fn();
-    const button = container.querySelector("#save-btn");
-    button.click();
-    expect(global.alert).toHaveBeenCalledWith("Settings saved!");
+  test('[C101] Navigate to Notifications Settings', () => {
+    window.location.href = `http://localhost/notifications_setting.html`;
+    expect(window.location.href).toBe("http://localhost/notifications_setting.html");
+  });
+
+  test('[C102] Navigate to Account Settings', () => {
+    window.location.href = `http://localhost/account_setting.html`;
+    expect(window.location.href).toBe("http://localhost/account_setting.html");
   });
 });

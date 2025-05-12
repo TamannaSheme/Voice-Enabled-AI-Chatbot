@@ -1,47 +1,114 @@
-// Polyfill for TextEncoder and TextDecoder
-const { TextEncoder, TextDecoder } = require('util');
-global.TextEncoder = TextEncoder;
-global.TextDecoder = TextDecoder;
+/**
+ * @jest-environment jsdom
+ */
 
-const fs = require("fs");
-const path = require("path");
-const { JSDOM } = require("jsdom");
+const fs = require('fs');
+const path = require('path');
+const { JSDOM } = require('jsdom');
+const { fireEvent } = require('@testing-library/dom');
+require('@testing-library/jest-dom/extend-expect');
 
-let dom, document, container;
+// Load the HTML file
+const html = fs.readFileSync(path.resolve(__dirname, 'ask-lumi.html'), 'utf8');
+let dom;
+let container;
 
-beforeAll(() => {
-  const html = fs.readFileSync(path.resolve(__dirname, "../ask-lumi.html"), "utf8");
+beforeEach(() => {
   dom = new JSDOM(html, { runScripts: "dangerously", resources: "usable" });
-  document = dom.window.document;
-  container = document.body;
+  container = dom.window.document.body;
+  dom.window.SpeechRecognition = jest.fn().mockImplementation(() => ({
+    start: jest.fn(),
+    onresult: jest.fn(),
+    onerror: jest.fn(),
+  }));
+  dom.window.speechSynthesis = {
+    speak: jest.fn(),
+  };
+  require('./ask-lumi.js');
 });
 
-describe("Ask Lumi Page UI", () => {
-  test("[L101] should have a title and logo", () => {
-    const title = container.querySelector("h1");
-    const logo = container.querySelector("img.lumi-logo");
-    expect(title).not.toBeNull();
-    expect(title.textContent).toMatch(/Ask Lumi a New Question/i);
-    expect(logo).not.toBeNull();
+describe("Ask Lumi Page Testing", () => {
+  test("C26 - Submit Question Successfully", () => {
+    const questionBox = container.querySelector("#question");
+    const chatMessages = container.querySelector("#chat-messages");
+    questionBox.value = "What is AI?";
+    dom.window.respondToUser();
+    
+    expect(chatMessages.innerHTML).toContain("ME");
+    expect(chatMessages.innerHTML).toContain("What is AI?");
   });
 
-  test("[L102] should have a textarea input and two buttons", () => {
-    const textarea = container.querySelector("textarea#question");
-    const buttons = container.querySelectorAll("button.button-orange");
-    expect(textarea).not.toBeNull();
-    expect(buttons.length).toBe(2); // 🎤 and ➤
+  test("C27 - Submit Without Question", () => {
+    const questionBox = container.querySelector("#question");
+    questionBox.value = "";
+    const alertMock = jest.spyOn(dom.window, 'alert').mockImplementation(() => {});
+    
+    dom.window.respondToUser();
+    
+    expect(alertMock).toHaveBeenCalledWith("Please enter a question before submitting.");
+    alertMock.mockRestore();
   });
 
-  test("[L103] settings button should be present with dropdown", () => {
+  test("C28 - Voice Input Button Click", () => {
+    const voiceButton = container.querySelector(".button-orange");
+    fireEvent.click(voiceButton);
+    
+    expect(dom.window.SpeechRecognition).toHaveBeenCalled();
+  });
+
+  test("C29 - Voice Input Working Properly", () => {
+    const questionBox = container.querySelector("#question");
+    const recognitionMock = {
+      start: jest.fn(),
+      onresult: jest.fn(),
+      onerror: jest.fn(),
+    };
+    dom.window.SpeechRecognition = jest.fn().mockReturnValue(recognitionMock);
+    
+    dom.window.startVoice("question");
+    recognitionMock.onresult({ results: [[{ transcript: "Hello Lumi" }]] });
+    
+    expect(questionBox.value).toBe("Hello Lumi");
+  });
+
+  test("C30 - Microphone Access Denied", () => {
+    const recognitionMock = {
+      start: jest.fn(),
+      onerror: jest.fn(),
+    };
+    dom.window.SpeechRecognition = jest.fn().mockReturnValue(recognitionMock);
+
+    dom.window.startVoice("question");
+    recognitionMock.onerror({ error: "not-allowed" });
+
+    const alertMock = jest.spyOn(dom.window, 'alert').mockImplementation(() => {});
+    expect(alertMock).toHaveBeenCalledWith("Voice input error: not-allowed");
+    alertMock.mockRestore();
+  });
+
+  test("C31 - Voice Submission Shows Success Message", async () => {
+    const questionBox = container.querySelector("#question");
+    const chatMessages = container.querySelector("#chat-messages");
+    questionBox.value = "Hello Lumi";
+
+    global.fetch = jest.fn(() =>
+      Promise.resolve({
+        json: () => Promise.resolve({ reply: "Hello User" }),
+      })
+    );
+
+    await dom.window.respondToUser();
+    expect(chatMessages.innerHTML).toContain("Hello User");
+  });
+
+  test("C32 - UI Load Check", () => {
     const settingsBtn = container.querySelector(".settings-btn");
     const dropdown = container.querySelector("#settingsDropdown");
-    expect(settingsBtn).not.toBeNull();
-    expect(dropdown).not.toBeNull();
-    expect(dropdown.querySelectorAll("a").length).toBeGreaterThanOrEqual(2);
-  });
+    
+    fireEvent.click(settingsBtn);
+    expect(dropdown.style.display).toBe("block");
 
-  test("[L104] chat message container should exist", () => {
-    const chatBox = container.querySelector("#chat-messages");
-    expect(chatBox).not.toBeNull();
+    fireEvent.click(settingsBtn);
+    expect(dropdown.style.display).toBe("none");
   });
 });
