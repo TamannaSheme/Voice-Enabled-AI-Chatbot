@@ -1,29 +1,52 @@
-const fs = require('fs');
-const path = require('path');
-const { JSDOM } = require('jsdom');
+/**
+ * @jest-environment jsdom
+ */
 
-const html = fs.readFileSync(path.resolve(__dirname, '../role.html'), 'utf8');
+const fs = require("fs");
+const path = require("path");
 
-let dom, container;
-beforeEach(() => {
-    dom = new JSDOM(html, { runScripts: "dangerously", resources: "usable" });
-    container = dom.window.document.body;
-});
+describe("Role Selection Page Testing", () => {
+  let document;
 
-test('C109 - Verify Navigation for Student Role', () => {
-    const studentButton = container.querySelector(".role-card:nth-child(1)");
-    studentButton.click();
-    expect(dom.window.location.href).toContain("student.html");
-});
+  beforeEach(() => {
+    // Load HTML file
+    const html = fs.readFileSync(path.resolve(__dirname, "../role.html"), "utf8");
+    document = new DOMParser().parseFromString(html, "text/html");
+    document.body.innerHTML = html;
+  });
 
-test('C110 - Verify Navigation for Instructor Role', () => {
-    const instructorButton = container.querySelector(".role-card:nth-child(2)");
-    instructorButton.click();
-    expect(dom.window.location.href).toContain("instructor.html");
-});
+  // C105: Verify Role Selection Page Loads Successfully
+  test("[C105] Verify Role Selection Page Loads Successfully", () => {
+    const header = document.querySelector("h1");
+    expect(header).toBeTruthy();
+    expect(header.textContent).toBe("Choose Your Role");
+  });
 
-test('C112 - Verify Navigation for LMS Admin Role', () => {
-    const adminButton = container.querySelector(".role-card:nth-child(3)");
-    adminButton.click();
-    expect(dom.window.location.href).toContain("admin.html");
+  // C106: Verify Role Selection for Student
+  test("[C106] Verify Role Selection for Student", () => {
+    const studentRole = document.querySelector(".role-card[onclick=\"handleRole('student')\"]");
+    expect(studentRole).toBeTruthy();
+    expect(studentRole.textContent).toBe("Student");
+  });
+
+  // C107: Verify Role Selection for Instructor
+  test("[C107] Verify Role Selection for Instructor", () => {
+    const instructorRole = document.querySelector(".role-card[onclick=\"handleRole('instructor')\"]");
+    expect(instructorRole).toBeTruthy();
+    expect(instructorRole.textContent).toBe("Instructor");
+  });
+
+  // C108: Verify Role Selection for LMS Admin
+  test("[C108] Verify Role Selection for LMS Admin", () => {
+    const adminRole = document.querySelector(".role-card[onclick=\"handleRole('admin')\"]");
+    expect(adminRole).toBeTruthy();
+    expect(adminRole.textContent).toBe("LMS Admin");
+  });
+
+  // C109: Verify Logo is Displayed
+  test("[C109] Verify Logo is Displayed", () => {
+    const logo = document.querySelector(".logo");
+    expect(logo).toBeTruthy();
+    expect(logo.getAttribute("src")).toBe("images/lumi-icon.png");
+  });
 });

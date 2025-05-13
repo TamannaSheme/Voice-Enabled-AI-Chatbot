@@ -1,14 +1,14 @@
 {
-  "numFailedTestSuites": 2,
-  "numFailedTests": 3,
-  "numPassedTestSuites": 12,
-  "numPassedTests": 41,
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 14,
+  "numPassedTests": 52,
   "numPendingTestSuites": 0,
   "numPendingTests": 0,
-  "numRuntimeErrorTestSuites": 1,
+  "numRuntimeErrorTestSuites": 0,
   "numTodoTests": 0,
   "numTotalTestSuites": 14,
-  "numTotalTests": 44,
+  "numTotalTests": 52,
   "openHandles": [],
   "snapshot": {
     "added": 0,
@@ -26,9 +26,193 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1747042935311,
+  "startTime": 1747103712285,
   "success": false,
   "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747103721566,
+        "runtime": 3508,
+        "slow": false,
+        "start": 1747103718058
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\sample.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 7,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "C3 - Submit Button works",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "C3 - Submit Button works"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "C4 - Email field accepts valid input",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "C4 - Email field accepts valid input"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "C5 - Validation fails on empty form",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "C5 - Validation fails on empty form"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747103721564,
+        "runtime": 3527,
+        "slow": false,
+        "start": 1747103718037
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\admin.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Admin page placeholder test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "Admin page placeholder test"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747103721587,
+        "runtime": 3574,
+        "slow": false,
+        "start": 1747103718013
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\navigate.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 18,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "navigate to voice page",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "navigate to voice page"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747103721606,
+        "runtime": 3603,
+        "slow": false,
+        "start": 1747103718003
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\sample.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "basic sample test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "basic sample test"
+        }
+      ],
+      "failureMessage": null
+    },
     {
       "leaks": false,
       "numFailingTests": 0,
@@ -37,10 +221,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747042939309,
-        "runtime": 1652,
+        "end": 1747103721623,
+        "runtime": 3693,
         "slow": false,
-        "start": 1747042937657
+        "start": 1747103717930
       },
       "skipped": false,
       "snapshot": {
@@ -58,14 +242,13 @@
           "ancestorTitles": [
             "Settings Page Testing"
           ],
-          "duration": 16,
+          "duration": 7,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Settings Page Testing [C98] Navigate to Voice Settings",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C98] Navigate to Voice Settings"
         },
@@ -73,14 +256,13 @@
           "ancestorTitles": [
             "Settings Page Testing"
           ],
-          "duration": 3,
+          "duration": 1,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Settings Page Testing [C99] Navigate to Preferences Settings",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C99] Navigate to Preferences Settings"
         },
@@ -94,8 +276,7 @@
           "fullName": "Settings Page Testing [C101] Navigate to Notifications Settings",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C101] Navigate to Notifications Settings"
         },
@@ -109,8 +290,7 @@
           "fullName": "Settings Page Testing [C102] Navigate to Account Settings",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C102] Navigate to Account Settings"
         }
@@ -120,15 +300,15 @@
     {
       "leaks": false,
       "numFailingTests": 0,
-      "numPassingTests": 3,
+      "numPassingTests": 5,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747042939344,
-        "runtime": 1686,
+        "end": 1747103721874,
+        "runtime": 3938,
         "slow": false,
-        "start": 1747042937658
+        "start": 1747103717936
       },
       "skipped": false,
       "snapshot": {
@@ -140,169 +320,77 @@
         "unmatched": 0,
         "updated": 0
       },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\sample.test.js",
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\role.test.js",
       "testResults": [
         {
-          "ancestorTitles": [],
-          "duration": 34,
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 180,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "C3 - Submit Button works",
+          "fullName": "Role Selection Page Testing [C105] Verify Role Selection Page Loads Successfully",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
-          "title": "C3 - Submit Button works"
+          "title": "[C105] Verify Role Selection Page Loads Successfully"
         },
         {
-          "ancestorTitles": [],
-          "duration": 9,
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 38,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "C4 - Email field accepts valid input",
+          "fullName": "Role Selection Page Testing [C106] Verify Role Selection for Student",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
-          "title": "C4 - Email field accepts valid input"
+          "title": "[C106] Verify Role Selection for Student"
         },
         {
-          "ancestorTitles": [],
-          "duration": 1,
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 16,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "C5 - Validation fails on empty form",
+          "fullName": "Role Selection Page Testing [C107] Verify Role Selection for Instructor",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
-          "title": "C5 - Validation fails on empty form"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 1,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747042939363,
-        "runtime": 1661,
-        "slow": false,
-        "start": 1747042937702
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\admin.test.js",
-      "testResults": [
+          "title": "[C107] Verify Role Selection for Instructor"
+        },
         {
-          "ancestorTitles": [],
-          "duration": 30,
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 28,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "Admin page placeholder test",
+          "fullName": "Role Selection Page Testing [C108] Verify Role Selection for LMS Admin",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
-          "title": "Admin page placeholder test"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 1,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747042939390,
-        "runtime": 1655,
-        "slow": false,
-        "start": 1747042937735
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\navigate.test.js",
-      "testResults": [
+          "title": "[C108] Verify Role Selection for LMS Admin"
+        },
         {
-          "ancestorTitles": [],
-          "duration": 23,
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 35,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "navigate to voice page",
+          "fullName": "Role Selection Page Testing [C109] Verify Logo is Displayed",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
-          "title": "navigate to voice page"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 1,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747042939387,
-        "runtime": 1673,
-        "slow": false,
-        "start": 1747042937714
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\sample.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [],
-          "duration": 41,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "basic sample test",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "basic sample test"
+          "title": "[C109] Verify Logo is Displayed"
         }
       ],
       "failureMessage": null
@@ -315,10 +403,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747042939536,
-        "runtime": 1806,
+        "end": 1747103721993,
+        "runtime": 4048,
         "slow": false,
-        "start": 1747042937730
+        "start": 1747103717945
       },
       "skipped": false,
       "snapshot": {
@@ -336,16 +424,43 @@
           "ancestorTitles": [
             "Voice Settings Page Testing"
           ],
-          "duration": 128,
+          "duration": 252,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Voice Settings Page Testing [C20] Enable/Disable Voice Input",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 3,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C20] Enable/Disable Voice Input"
+        },
+        {
+          "ancestorTitles": [
+            "Voice Settings Page Testing"
+          ],
+          "duration": 59,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Settings Page Testing [C21] Select Speech Mode Option",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C21] Select Speech Mode Option"
+        },
+        {
+          "ancestorTitles": [
+            "Voice Settings Page Testing"
+          ],
+          "duration": 22,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Settings Page Testing [C22] Change Language Option",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C22] Change Language Option"
         },
         {
           "ancestorTitles": [
@@ -354,41 +469,10 @@
           "duration": 23,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "Voice Settings Page Testing [C21] Select Speech Mode Option",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "[C21] Select Speech Mode Option"
-        },
-        {
-          "ancestorTitles": [
-            "Voice Settings Page Testing"
-          ],
-          "duration": 19,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Voice Settings Page Testing [C22] Change Language Option",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "[C22] Change Language Option"
-        },
-        {
-          "ancestorTitles": [
-            "Voice Settings Page Testing"
-          ],
-          "duration": 19,
-          "failureDetails": [],
-          "failureMessages": [],
           "fullName": "Voice Settings Page Testing [C23] Change Auto-Delete Option",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 2,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C23] Change Auto-Delete Option"
         },
@@ -396,14 +480,13 @@
           "ancestorTitles": [
             "Voice Settings Page Testing"
           ],
-          "duration": 13,
+          "duration": 31,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Voice Settings Page Testing [C24] Save Button Functionality",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 2,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C24] Save Button Functionality"
         },
@@ -411,16 +494,207 @@
           "ancestorTitles": [
             "Voice Settings Page Testing"
           ],
-          "duration": 7,
+          "duration": 48,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Voice Settings Page Testing [C25] Navigation to Settings Page",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 2,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C25] Navigation to Settings Page"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 6,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747103722035,
+        "runtime": 4033,
+        "slow": false,
+        "start": 1747103718002
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\ask_lumi.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page Testing"
+          ],
+          "duration": 222,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Testing [C26] Verify Ask Lumi Page Loads Successfully",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C26] Verify Ask Lumi Page Loads Successfully"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page Testing"
+          ],
+          "duration": 47,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Testing [C27] Verify Question Input Exists",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C27] Verify Question Input Exists"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page Testing"
+          ],
+          "duration": 38,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Testing [C28] Verify Voice Input Button Exists",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C28] Verify Voice Input Button Exists"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page Testing"
+          ],
+          "duration": 35,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Testing [C29] Verify Submit Button Exists",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C29] Verify Submit Button Exists"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page Testing"
+          ],
+          "duration": 78,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Testing [C30] Verify Settings Dropdown Works",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C30] Verify Settings Dropdown Works"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page Testing"
+          ],
+          "duration": 30,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Testing [C31] Verify Links in Settings Dropdown",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C31] Verify Links in Settings Dropdown"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747103724129,
+        "runtime": 5894,
+        "slow": true,
+        "start": 1747103718235
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\student.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Student page renders correctly",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "Student page renders correctly"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747103724137,
+        "runtime": 6180,
+        "slow": true,
+        "start": 1747103717957
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\account_setting.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 8,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Account page displays user email",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "Account page displays user email"
         }
       ],
       "failureMessage": null
@@ -433,10 +707,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747042940749,
-        "runtime": 3093,
-        "slow": false,
-        "start": 1747042937656
+        "end": 1747103724183,
+        "runtime": 6250,
+        "slow": true,
+        "start": 1747103717933
       },
       "skipped": false,
       "snapshot": {
@@ -454,14 +728,13 @@
           "ancestorTitles": [
             "Notifications Settings Page Testing"
           ],
-          "duration": 74,
+          "duration": 151,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Notifications Settings Page Testing [C47] Toggle Push Notifications and Save",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C47] Toggle Push Notifications and Save"
         },
@@ -469,14 +742,13 @@
           "ancestorTitles": [
             "Notifications Settings Page Testing"
           ],
-          "duration": 14,
+          "duration": 23,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Notifications Settings Page Testing [C48] Toggle Email Alerts and Save",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C48] Toggle Email Alerts and Save"
         },
@@ -484,14 +756,13 @@
           "ancestorTitles": [
             "Notifications Settings Page Testing"
           ],
-          "duration": 9,
+          "duration": 27,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Notifications Settings Page Testing [C49] Change Sound to Enabled and Save",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C49] Change Sound to Enabled and Save"
         }
@@ -506,10 +777,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747042940802,
-        "runtime": 3127,
-        "slow": false,
-        "start": 1747042937675
+        "end": 1747103724236,
+        "runtime": 6238,
+        "slow": true,
+        "start": 1747103717998
       },
       "skipped": false,
       "snapshot": {
@@ -525,111 +796,27 @@
       "testResults": [
         {
           "ancestorTitles": [],
-          "duration": 114,
+          "duration": 193,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "[C101] should have a title",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 2,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C101] should have a title"
         },
         {
           "ancestorTitles": [],
-          "duration": 30,
+          "duration": 48,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "[C102] should have some buttons",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C102] should have some buttons"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 1,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747042940831,
-        "runtime": 3117,
-        "slow": false,
-        "start": 1747042937714
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\student.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [],
-          "duration": 10,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Student page renders correctly",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Student page renders correctly"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 1,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747042940873,
-        "runtime": 3183,
-        "slow": false,
-        "start": 1747042937690
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\account_setting.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [],
-          "duration": 9,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Account page displays user email",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Account page displays user email"
         }
       ],
       "failureMessage": null
@@ -642,10 +829,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747042940910,
-        "runtime": 3183,
-        "slow": false,
-        "start": 1747042937727
+        "end": 1747103724324,
+        "runtime": 6311,
+        "slow": true,
+        "start": 1747103718013
       },
       "skipped": false,
       "snapshot": {
@@ -663,14 +850,13 @@
           "ancestorTitles": [
             "Preferences Settings Page Testing"
           ],
-          "duration": 101,
+          "duration": 206,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Preferences Settings Page Testing [C39] Check default preference selections",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 3,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C39] Check default preference selections"
         },
@@ -678,31 +864,15 @@
           "ancestorTitles": [
             "Preferences Settings Page Testing"
           ],
-          "duration": 18,
+          "duration": 49,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Preferences Settings Page Testing [C40] Change theme preference and save",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C40] Change theme preference and save"
-        },
-        {
-          "ancestorTitles": [
-            "Preferences Settings Page Testing"
-          ],
-          "duration": 20,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Preferences Settings Page Testing [C41] Change font size and save",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "[C41] Change font size and save"
         },
         {
           "ancestorTitles": [
@@ -711,11 +881,24 @@
           "duration": 25,
           "failureDetails": [],
           "failureMessages": [],
+          "fullName": "Preferences Settings Page Testing [C41] Change font size and save",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C41] Change font size and save"
+        },
+        {
+          "ancestorTitles": [
+            "Preferences Settings Page Testing"
+          ],
+          "duration": 29,
+          "failureDetails": [],
+          "failureMessages": [],
           "fullName": "Preferences Settings Page Testing [C42] Back to Settings navigation link works",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C42] Back to Settings navigation link works"
         },
@@ -723,14 +906,13 @@
           "ancestorTitles": [
             "Preferences Settings Page Testing"
           ],
-          "duration": 15,
+          "duration": 27,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Preferences Settings Page Testing [C43] Verify app language option",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C43] Verify app language option"
         },
@@ -738,47 +920,18 @@
           "ancestorTitles": [
             "Preferences Settings Page Testing"
           ],
-          "duration": 14,
+          "duration": 25,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Preferences Settings Page Testing [C44] Verify save button without changes",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 2,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C44] Verify save button without changes"
         }
       ],
       "failureMessage": null
-    },
-    {
-      "failureMessage": "  \u001b[1m● \u001b[22mTest suite failed to run\n\n    Cannot find module '@testing-library/jest-dom/extend-expect' from 'tests/ask_lumi.test.js'\n\n    \u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36mconst\u001b[39m { \u001b[33mJSDOM\u001b[39m } \u001b[33m=\u001b[39m require(\u001b[32m'jsdom'\u001b[39m)\u001b[33m;\u001b[39m\n     \u001b[90m  8 |\u001b[39m \u001b[36mconst\u001b[39m { fireEvent } \u001b[33m=\u001b[39m require(\u001b[32m'@testing-library/dom'\u001b[39m)\u001b[33m;\u001b[39m\n    \u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m require(\u001b[32m'@testing-library/jest-dom/extend-expect'\u001b[39m)\u001b[33m;\u001b[39m\n     \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n     \u001b[90m 10 |\u001b[39m\n     \u001b[90m 11 |\u001b[39m \u001b[90m// Load the HTML file\u001b[39m\n     \u001b[90m 12 |\u001b[39m \u001b[36mconst\u001b[39m html \u001b[33m=\u001b[39m fs\u001b[33m.\u001b[39mreadFileSync(path\u001b[33m.\u001b[39mresolve(__dirname\u001b[33m,\u001b[39m \u001b[32m'ask-lumi.html'\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m'utf8'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n      \u001b[2mat Resolver._throwModNotFoundError (\u001b[22mnode_modules/jest-resolve/build/resolver.js\u001b[2m:427:11)\u001b[22m\n      \u001b[2mat Object.require (\u001b[22m\u001b[0m\u001b[36mtests/ask_lumi.test.js\u001b[39m\u001b[0m\u001b[2m:9:1)\u001b[22m\n",
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 0,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 0,
-        "runtime": 0,
-        "slow": false,
-        "start": 0
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testExecError": "Cannot find module '@testing-library/jest-dom/extend-expect' from 'tests/ask_lumi.test.js'",
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\ask_lumi.test.js",
-      "testResults": []
     },
     {
       "leaks": false,
@@ -788,10 +941,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747042940947,
-        "runtime": 3296,
-        "slow": false,
-        "start": 1747042937651
+        "end": 1747103724452,
+        "runtime": 6421,
+        "slow": true,
+        "start": 1747103718031
       },
       "skipped": false,
       "snapshot": {
@@ -809,14 +962,13 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 99,
+          "duration": 172,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C1] Page Load",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C1] Page Load"
         },
@@ -824,14 +976,13 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 17,
+          "duration": 53,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C2] Voice Input - Student ID",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C2] Voice Input - Student ID"
         },
@@ -839,14 +990,13 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 13,
+          "duration": 25,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C3] Voice Input - Phone Number",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C3] Voice Input - Phone Number"
         },
@@ -854,14 +1004,13 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 19,
+          "duration": 26,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C4] Voice Input - Email",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C4] Voice Input - Email"
         },
@@ -869,14 +1018,13 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 14,
+          "duration": 25,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C5] Submit Without Filling Fields",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C5] Submit Without Filling Fields"
         },
@@ -884,14 +1032,13 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 17,
+          "duration": 27,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C6] Invalid Student ID Input",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C6] Invalid Student ID Input"
         },
@@ -899,14 +1046,13 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 14,
+          "duration": 18,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C12] Invalid Phone Number Input",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C12] Invalid Phone Number Input"
         },
@@ -914,14 +1060,13 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 19,
+          "duration": 16,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C7] Invalid Email Input",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C7] Invalid Email Input"
         },
@@ -929,16 +1074,29 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 23,
+          "duration": 33,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C8] Successful Form Submission",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 2,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C8] Successful Form Submission"
+        },
+        {
+          "ancestorTitles": [
+            "Welcome Page Testing"
+          ],
+          "duration": 31,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Welcome Page Testing [C9] Form Responsiveness",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C9] Form Responsiveness"
         },
         {
           "ancestorTitles": [
@@ -947,26 +1105,10 @@
           "duration": 17,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "Welcome Page Testing [C9] Form Responsiveness",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "[C9] Form Responsiveness"
-        },
-        {
-          "ancestorTitles": [
-            "Welcome Page Testing"
-          ],
-          "duration": 10,
-          "failureDetails": [],
-          "failureMessages": [],
           "fullName": "Welcome Page Testing [C10] Button Hover Effect",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C10] Button Hover Effect"
         },
@@ -974,113 +1116,18 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 14,
+          "duration": 12,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C11] Voice Recognition Error Handling",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
+          "numPassingAsserts": 0,
           "status": "passed",
           "title": "[C11] Voice Recognition Error Handling"
         }
       ],
       "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 3,
-      "numPassingTests": 0,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747042941092,
-        "runtime": 3393,
-        "slow": false,
-        "start": 1747042937699
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\role.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [],
-          "duration": 90,
-          "failureDetails": [
-            {
-              "matcherResult": {
-                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"student.html\"\u001b[39m\nReceived string:    \u001b[31m\"about:blank\"\u001b[39m",
-                "pass": false
-              }
-            }
-          ],
-          "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"student.html\"\u001b[39m\nReceived string:    \u001b[31m\"about:blank\"\u001b[39m\n    at Object.toContain (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\role.test.js:16:38)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:106:12)"
-          ],
-          "fullName": "C109 - Verify Navigation for Student Role",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "retryReasons": [],
-          "status": "failed",
-          "title": "C109 - Verify Navigation for Student Role"
-        },
-        {
-          "ancestorTitles": [],
-          "duration": 13,
-          "failureDetails": [
-            {
-              "matcherResult": {
-                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"instructor.html\"\u001b[39m\nReceived string:    \u001b[31m\"about:blank\"\u001b[39m",
-                "pass": false
-              }
-            }
-          ],
-          "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"instructor.html\"\u001b[39m\nReceived string:    \u001b[31m\"about:blank\"\u001b[39m\n    at Object.toContain (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\role.test.js:22:38)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:106:12)"
-          ],
-          "fullName": "C110 - Verify Navigation for Instructor Role",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "retryReasons": [],
-          "status": "failed",
-          "title": "C110 - Verify Navigation for Instructor Role"
-        },
-        {
-          "ancestorTitles": [],
-          "duration": 16,
-          "failureDetails": [
-            {
-              "matcherResult": {
-                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"admin.html\"\u001b[39m\nReceived string:    \u001b[31m\"about:blank\"\u001b[39m",
-                "pass": false
-              }
-            }
-          ],
-          "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"admin.html\"\u001b[39m\nReceived string:    \u001b[31m\"about:blank\"\u001b[39m\n    at Object.toContain (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\role.test.js:28:38)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:106:12)"
-          ],
-          "fullName": "C112 - Verify Navigation for LMS Admin Role",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "retryReasons": [],
-          "status": "failed",
-          "title": "C112 - Verify Navigation for LMS Admin Role"
-        }
-      ],
-      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mC109 - Verify Navigation for Student Role\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\n    Expected substring: \u001b[32m\"student.html\"\u001b[39m\n    Received string:    \u001b[31m\"about:blank\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[36mconst\u001b[39m studentButton \u001b[33m=\u001b[39m container\u001b[33m.\u001b[39mquerySelector(\u001b[32m\".role-card:nth-child(1)\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 15 |\u001b[39m     studentButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 16 |\u001b[39m     expect(dom\u001b[33m.\u001b[39mwindow\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mhref)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"student.html\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 17 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 18 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 19 |\u001b[39m test(\u001b[32m'C110 - Verify Navigation for Instructor Role'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toContain (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/role.test.js\u001b[39m\u001b[0m\u001b[2m:16:38)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mC110 - Verify Navigation for Instructor Role\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\n    Expected substring: \u001b[32m\"instructor.html\"\u001b[39m\n    Received string:    \u001b[31m\"about:blank\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mconst\u001b[39m instructorButton \u001b[33m=\u001b[39m container\u001b[33m.\u001b[39mquerySelector(\u001b[32m\".role-card:nth-child(2)\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 21 |\u001b[39m     instructorButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 22 |\u001b[39m     expect(dom\u001b[33m.\u001b[39mwindow\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mhref)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"instructor.html\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 23 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 24 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 25 |\u001b[39m test(\u001b[32m'C112 - Verify Navigation for LMS Admin Role'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toContain (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/role.test.js\u001b[39m\u001b[0m\u001b[2m:22:38)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mC112 - Verify Navigation for LMS Admin Role\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\n    Expected substring: \u001b[32m\"admin.html\"\u001b[39m\n    Received string:    \u001b[31m\"about:blank\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mconst\u001b[39m adminButton \u001b[33m=\u001b[39m container\u001b[33m.\u001b[39mquerySelector(\u001b[32m\".role-card:nth-child(3)\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 27 |\u001b[39m     adminButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 28 |\u001b[39m     expect(dom\u001b[33m.\u001b[39mwindow\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mhref)\u001b[33m.\u001b[39mtoContain(\u001b[32m\"admin.html\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 29 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 30 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toContain (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/role.test.js\u001b[39m\u001b[0m\u001b[2m:28:38)\u001b[22m\u001b[2m\u001b[22m\n"
     }
   ],
   "wasInterrupted": false
