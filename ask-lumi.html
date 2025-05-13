@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -18,6 +18,7 @@
       font-size: 28px;
       cursor: pointer;
       font-weight: bold;
+      aria-label: "Settings Button";
     }
 
     .settings-dropdown {
@@ -31,6 +32,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       z-index: 10000;
       min-width: 180px;
+      aria-label: "Settings Dropdown";
     }
 
     .settings-dropdown a {
@@ -39,6 +41,7 @@
       color: #333;
       text-decoration: none;
       font-size: 14px;
+      aria-label: "Settings Option";
     }
 
     .settings-dropdown a:hover {
@@ -47,15 +50,12 @@
   </style>
 </head>
 <body>
-  <!-- MAIN CHAT CONTAINER -->
   <div class="chat-container" style="position: relative;">
-
-    <!-- ⚙️ Settings Dropdown -->
     <div class="settings-menu">
-      <button class="settings-btn" onclick="toggleSettings()">⚙️</button>
-      <div class="settings-dropdown" id="settingsDropdown">
-        <a href="faq.html">📚 FAQ</a>
-        <a href="reset-password.html">🔐 Reset Password</a>
+      <button class="settings-btn" aria-label="Settings" onclick="toggleSettings()">⚙️</button>
+      <div class="settings-dropdown" id="settingsDropdown" role="menu" aria-hidden="true">
+        <a href="faq.html" aria-label="FAQ">📚 FAQ</a>
+        <a href="reset-password.html" aria-label="Reset Password">🔐 Reset Password</a>
       </div>
     </div>
 
@@ -64,25 +64,23 @@
       <h1>Ask Lumi a New Question</h1>
     </header>
 
-    <!-- Message display area -->
-    <div id="chat-messages" class="chat-box">
+    <div id="chat-messages" class="chat-box" role="log" aria-live="polite">
       <!-- Messages will appear here -->
     </div>
 
-    <!-- Input row: textarea + buttons -->
     <div class="input-area-row">
-      <textarea id="question" placeholder="Ask your question here..."></textarea>
-      <button onclick="startVoice('question')" class="button-orange">🎤</button>
-      <button onclick="respondToUser()" class="button-orange">➤</button>
+      <textarea id="question" placeholder="Ask your question here..." aria-label="Question Input"></textarea>
+      <button onclick="startVoice('question')" class="button-orange" aria-label="Start Voice Input">🎤</button>
+      <button onclick="respondToUser()" class="button-orange" aria-label="Submit Question">➤</button>
     </div>
   </div>
 
-  <!-- Scripts -->
   <script src="js/ask-lumi.js"></script>
   <script>
     function toggleSettings() {
       const dropdown = document.getElementById("settingsDropdown");
       dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+      dropdown.setAttribute("aria-hidden", dropdown.style.display === "none" ? "true" : "false");
     }
 
     window.addEventListener('click', function(e) {
@@ -90,6 +88,7 @@
         const dropdown = document.getElementById("settingsDropdown");
         if (dropdown && dropdown.style.display === "block") {
           dropdown.style.display = "none";
+          dropdown.setAttribute("aria-hidden", "true");
         }
       }
     });
