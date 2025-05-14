@@ -3,12 +3,10 @@
  */
 
 describe("Student Role Page Integration Testing", () => {
-  let document;
   let mockNavigate;
 
   beforeEach(() => {
     // Setting up the mock DOM for the Student Page
-    document = new Document();
     document.body.innerHTML = `
       <div class="card" id="courses-card" onclick="handleStudentNavigation('courses')">Courses</div>
       <div class="card" id="deadlines-card" onclick="handleStudentNavigation('deadlines')">Deadlines</div>
@@ -20,6 +18,31 @@ describe("Student Role Page Integration Testing", () => {
 
     // Mocking window.location.assign for navigation
     mockNavigate = jest.fn();
+    global.handleStudentNavigation = (page) => {
+      switch (page) {
+        case "courses":
+          window.location.assign("enrolled-courses.html");
+          break;
+        case "deadlines":
+          window.location.assign("upcoming-deadlines.html");
+          break;
+        case "submit":
+          window.location.assign("submit-assignment.html");
+          break;
+        case "grades":
+          window.location.assign("view-grades.html");
+          break;
+        case "notifications":
+          window.location.assign("notifications.html");
+          break;
+        case "ask-lumi":
+          window.location.assign("ask-lumi.html");
+          break;
+        default:
+          throw new Error("Invalid student action");
+      }
+    };
+
     Object.defineProperty(window, 'location', {
       value: {
         assign: mockNavigate
@@ -32,32 +55,6 @@ describe("Student Role Page Integration Testing", () => {
     jest.clearAllMocks();
   });
 
-  // Function for handling student navigation
-  const handleStudentNavigation = (page) => {
-    switch (page) {
-      case "courses":
-        window.location.assign("enrolled-courses.html");
-        break;
-      case "deadlines":
-        window.location.assign("upcoming-deadlines.html");
-        break;
-      case "submit":
-        window.location.assign("submit-assignment.html");
-        break;
-      case "grades":
-        window.location.assign("view-grades.html");
-        break;
-      case "notifications":
-        window.location.assign("notifications.html");
-        break;
-      case "ask-lumi":
-        window.location.assign("ask-lumi.html");
-        break;
-      default:
-        throw new Error("Invalid student action");
-    }
-  };
-
   // Test Case: Student Role Page Loads Successfully
   test("[C113] Verify Student Role Page Loads Successfully", () => {
     expect(document.querySelectorAll(".card").length).toBe(6);
@@ -65,43 +62,37 @@ describe("Student Role Page Integration Testing", () => {
 
   // Test Case: Enrolled Courses Card
   test("[C114] Verify Enrolled Courses Card Functionality", () => {
-    const card = document.querySelector("#courses-card");
-    card.click();
+    document.querySelector("#courses-card").click();
     expect(mockNavigate).toHaveBeenCalledWith("enrolled-courses.html");
   });
 
   // Test Case: Upcoming Deadlines Card
   test("[C115] Verify Upcoming Deadlines Card Functionality", () => {
-    const card = document.querySelector("#deadlines-card");
-    card.click();
+    document.querySelector("#deadlines-card").click();
     expect(mockNavigate).toHaveBeenCalledWith("upcoming-deadlines.html");
   });
 
   // Test Case: Submit Assignment Card
   test("[C116] Verify Submit Assignment Card Functionality", () => {
-    const card = document.querySelector("#submit-card");
-    card.click();
+    document.querySelector("#submit-card").click();
     expect(mockNavigate).toHaveBeenCalledWith("submit-assignment.html");
   });
 
   // Test Case: View Grades Card
   test("[C117] Verify View Grades Card Functionality", () => {
-    const card = document.querySelector("#grades-card");
-    card.click();
+    document.querySelector("#grades-card").click();
     expect(mockNavigate).toHaveBeenCalledWith("view-grades.html");
   });
 
   // Test Case: Notifications Card
   test("[C118] Verify Notifications Card Functionality", () => {
-    const card = document.querySelector("#notifications-card");
-    card.click();
+    document.querySelector("#notifications-card").click();
     expect(mockNavigate).toHaveBeenCalledWith("notifications.html");
   });
 
   // Test Case: Ask Lumi Card
   test("[C121] Verify Ask Lumi Card Functionality", () => {
-    const card = document.querySelector("#ask-lumi-card");
-    card.click();
+    document.querySelector("#ask-lumi-card").click();
     expect(mockNavigate).toHaveBeenCalledWith("ask-lumi.html");
   });
 
@@ -109,10 +100,8 @@ describe("Student Role Page Integration Testing", () => {
   test("[C122] Verify Button Hover Effects", () => {
     const cards = document.querySelectorAll(".card");
     cards.forEach(card => {
-      // Simulating hover effect
-      card.style.transition = "all 0.3s";
       card.dispatchEvent(new Event("mouseover"));
-      expect(card.style.transition).toBe("all 0.3s");
+      expect(card.className).toBe("card");
     });
   });
 });
