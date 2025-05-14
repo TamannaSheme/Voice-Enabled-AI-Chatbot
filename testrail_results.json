@@ -1,14 +1,14 @@
 {
-  "numFailedTestSuites": 0,
-  "numFailedTests": 0,
-  "numPassedTestSuites": 16,
-  "numPassedTests": 73,
+  "numFailedTestSuites": 2,
+  "numFailedTests": 13,
+  "numPassedTestSuites": 17,
+  "numPassedTests": 88,
   "numPendingTestSuites": 0,
   "numPendingTests": 0,
   "numRuntimeErrorTestSuites": 0,
   "numTodoTests": 0,
-  "numTotalTestSuites": 16,
-  "numTotalTests": 73,
+  "numTotalTestSuites": 19,
+  "numTotalTests": 101,
   "openHandles": [],
   "snapshot": {
     "added": 0,
@@ -26,21 +26,21 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1747185705154,
+  "startTime": 1747224217254,
   "success": false,
   "testResults": [
     {
       "leaks": false,
       "numFailingTests": 0,
-      "numPassingTests": 3,
+      "numPassingTests": 7,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747185713293,
-        "runtime": 2625,
+        "end": 1747224222559,
+        "runtime": 2102,
         "slow": false,
-        "start": 1747185710668
+        "start": 1747224220457
       },
       "skipped": false,
       "snapshot": {
@@ -52,795 +52,105 @@
         "unmatched": 0,
         "updated": 0
       },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\sample.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [],
-          "duration": 4,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "C3 - Submit Button works",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "C3 - Submit Button works"
-        },
-        {
-          "ancestorTitles": [],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "C4 - Email field accepts valid input",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "C4 - Email field accepts valid input"
-        },
-        {
-          "ancestorTitles": [],
-          "duration": 1,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "C5 - Validation fails on empty form",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "C5 - Validation fails on empty form"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 1,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747185713321,
-        "runtime": 2675,
-        "slow": false,
-        "start": 1747185710646
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\navigate.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [],
-          "duration": 13,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "navigate to voice page",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "navigate to voice page"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 4,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747185713325,
-        "runtime": 2741,
-        "slow": false,
-        "start": 1747185710584
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\role.unit.test.js",
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\instructor.unit.test.js",
       "testResults": [
         {
           "ancestorTitles": [
-            "handleRole Function Unit Test"
+            "Instructor Page Unit Testing"
           ],
           "duration": 5,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "handleRole Function Unit Test should navigate to student page",
+          "fullName": "Instructor Page Unit Testing should navigate to Manage Courses page",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "status": "passed",
-          "title": "should navigate to student page"
+          "title": "should navigate to Manage Courses page"
         },
         {
           "ancestorTitles": [
-            "handleRole Function Unit Test"
+            "Instructor Page Unit Testing"
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Instructor Page Unit Testing should navigate to Upload Materials page",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should navigate to Upload Materials page"
+        },
+        {
+          "ancestorTitles": [
+            "Instructor Page Unit Testing"
           ],
           "duration": 2,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "handleRole Function Unit Test should navigate to admin page",
+          "fullName": "Instructor Page Unit Testing should navigate to Grade Submissions page",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "status": "passed",
-          "title": "should navigate to admin page"
+          "title": "should navigate to Grade Submissions page"
         },
         {
           "ancestorTitles": [
-            "handleRole Function Unit Test"
-          ],
-          "duration": 8,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "handleRole Function Unit Test should navigate to instructor page",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "should navigate to instructor page"
-        },
-        {
-          "ancestorTitles": [
-            "handleRole Function Unit Test"
-          ],
-          "duration": 21,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "handleRole Function Unit Test should throw an error for invalid role",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "should throw an error for invalid role"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 4,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747185713326,
-        "runtime": 2643,
-        "slow": false,
-        "start": 1747185710683
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\settings.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "Settings Page Testing"
-          ],
-          "duration": 3,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Settings Page Testing [C98] Navigate to Voice Settings",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C98] Navigate to Voice Settings"
-        },
-        {
-          "ancestorTitles": [
-            "Settings Page Testing"
+            "Instructor Page Unit Testing"
           ],
           "duration": 1,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "Settings Page Testing [C99] Navigate to Preferences Settings",
+          "fullName": "Instructor Page Unit Testing should navigate to Set Deadlines page",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "status": "passed",
-          "title": "[C99] Navigate to Preferences Settings"
+          "title": "should navigate to Set Deadlines page"
         },
         {
           "ancestorTitles": [
-            "Settings Page Testing"
+            "Instructor Page Unit Testing"
           ],
           "duration": 1,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "Settings Page Testing [C101] Navigate to Notifications Settings",
+          "fullName": "Instructor Page Unit Testing should navigate to Announcements page",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "status": "passed",
-          "title": "[C101] Navigate to Notifications Settings"
+          "title": "should navigate to Announcements page"
         },
         {
           "ancestorTitles": [
-            "Settings Page Testing"
+            "Instructor Page Unit Testing"
           ],
           "duration": 1,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "Settings Page Testing [C102] Navigate to Account Settings",
+          "fullName": "Instructor Page Unit Testing should navigate to Ask Lumi page",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "status": "passed",
-          "title": "[C102] Navigate to Account Settings"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 1,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747185713330,
-        "runtime": 2652,
-        "slow": false,
-        "start": 1747185710678
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\sample.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [],
-          "duration": 4,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "basic sample test",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "basic sample test"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 8,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747185713596,
-        "runtime": 2963,
-        "slow": false,
-        "start": 1747185710633
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\admin.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "Admin Role Page Testing"
-          ],
-          "duration": 124,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Admin Role Page Testing [C133] Visual Consistency Check",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C133] Visual Consistency Check"
+          "title": "should navigate to Ask Lumi page"
         },
         {
           "ancestorTitles": [
-            "Admin Role Page Testing"
+            "Instructor Page Unit Testing"
           ],
-          "duration": 13,
+          "duration": 14,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "Admin Role Page Testing [C135] Admin Page Access Control",
+          "fullName": "Instructor Page Unit Testing should throw an error for invalid action",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "status": "passed",
-          "title": "[C135] Admin Page Access Control"
-        },
-        {
-          "ancestorTitles": [
-            "Admin Role Page Testing"
-          ],
-          "duration": 47,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Admin Role Page Testing [C136] Manage Users Button Functionality",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C136] Manage Users Button Functionality"
-        },
-        {
-          "ancestorTitles": [
-            "Admin Role Page Testing"
-          ],
-          "duration": 24,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Admin Role Page Testing [C137] Role Access Control Button Functionality",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C137] Role Access Control Button Functionality"
-        },
-        {
-          "ancestorTitles": [
-            "Admin Role Page Testing"
-          ],
-          "duration": 23,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Admin Role Page Testing [C138] Platform Stats Button Functionality",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C138] Platform Stats Button Functionality"
-        },
-        {
-          "ancestorTitles": [
-            "Admin Role Page Testing"
-          ],
-          "duration": 16,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Admin Role Page Testing [C139] Global Announcements Button Functionality",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C139] Global Announcements Button Functionality"
-        },
-        {
-          "ancestorTitles": [
-            "Admin Role Page Testing"
-          ],
-          "duration": 41,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Admin Role Page Testing [C140] System Settings Button Functionality",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C140] System Settings Button Functionality"
-        },
-        {
-          "ancestorTitles": [
-            "Admin Role Page Testing"
-          ],
-          "duration": 21,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Admin Role Page Testing [C141] Ask Lumi Button Functionality",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C141] Ask Lumi Button Functionality"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 8,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747185713627,
-        "runtime": 3027,
-        "slow": false,
-        "start": 1747185710600
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\role.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "Role Selection Page Testing"
-          ],
-          "duration": 134,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Role Selection Page Testing [C105] Verify Role Selection Page Loads Successfully",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C105] Verify Role Selection Page Loads Successfully"
-        },
-        {
-          "ancestorTitles": [
-            "Role Selection Page Testing"
-          ],
-          "duration": 28,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Role Selection Page Testing [C106] Verify Role Selection for Student",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C106] Verify Role Selection for Student"
-        },
-        {
-          "ancestorTitles": [
-            "Role Selection Page Testing"
-          ],
-          "duration": 30,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Role Selection Page Testing [C107] Verify Role Selection for Instructor",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C107] Verify Role Selection for Instructor"
-        },
-        {
-          "ancestorTitles": [
-            "Role Selection Page Testing"
-          ],
-          "duration": 17,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Role Selection Page Testing [C108] Verify Role Selection for LMS Admin",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C108] Verify Role Selection for LMS Admin"
-        },
-        {
-          "ancestorTitles": [
-            "Role Selection Page Testing"
-          ],
-          "duration": 22,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Role Selection Page Testing [C109] Verify Logo is Displayed",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C109] Verify Logo is Displayed"
-        },
-        {
-          "ancestorTitles": [
-            "Role Selection Page Testing"
-          ],
-          "duration": 33,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Role Selection Page Testing [C110] Verify Navigation for Student Role",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C110] Verify Navigation for Student Role"
-        },
-        {
-          "ancestorTitles": [
-            "Role Selection Page Testing"
-          ],
-          "duration": 51,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Role Selection Page Testing [C111] Verify Visibility of Role Selection Buttons",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C111] Verify Visibility of Role Selection Buttons"
-        },
-        {
-          "ancestorTitles": [
-            "Role Selection Page Testing"
-          ],
-          "duration": 13,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Role Selection Page Testing [C112] Verify Navigation for LMS Admin Role",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C112] Verify Navigation for LMS Admin Role"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 6,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747185713627,
-        "runtime": 3026,
-        "slow": false,
-        "start": 1747185710601
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\voice_setting.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "Voice Settings Page Testing"
-          ],
-          "duration": 145,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Voice Settings Page Testing [C20] Enable/Disable Voice Input",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C20] Enable/Disable Voice Input"
-        },
-        {
-          "ancestorTitles": [
-            "Voice Settings Page Testing"
-          ],
-          "duration": 43,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Voice Settings Page Testing [C21] Select Speech Mode Option",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C21] Select Speech Mode Option"
-        },
-        {
-          "ancestorTitles": [
-            "Voice Settings Page Testing"
-          ],
-          "duration": 18,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Voice Settings Page Testing [C22] Change Language Option",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C22] Change Language Option"
-        },
-        {
-          "ancestorTitles": [
-            "Voice Settings Page Testing"
-          ],
-          "duration": 28,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Voice Settings Page Testing [C23] Change Auto-Delete Option",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C23] Change Auto-Delete Option"
-        },
-        {
-          "ancestorTitles": [
-            "Voice Settings Page Testing"
-          ],
-          "duration": 59,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Voice Settings Page Testing [C24] Save Button Functionality",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C24] Save Button Functionality"
-        },
-        {
-          "ancestorTitles": [
-            "Voice Settings Page Testing"
-          ],
-          "duration": 42,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Voice Settings Page Testing [C25] Navigation to Settings Page",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C25] Navigation to Settings Page"
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 6,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1747185713702,
-        "runtime": 3072,
-        "slow": false,
-        "start": 1747185710630
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\ask_lumi.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "Ask Lumi Page Testing"
-          ],
-          "duration": 179,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Ask Lumi Page Testing [C26] Verify Ask Lumi Page Loads Successfully",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C26] Verify Ask Lumi Page Loads Successfully"
-        },
-        {
-          "ancestorTitles": [
-            "Ask Lumi Page Testing"
-          ],
-          "duration": 40,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Ask Lumi Page Testing [C27] Verify Question Input Exists",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C27] Verify Question Input Exists"
-        },
-        {
-          "ancestorTitles": [
-            "Ask Lumi Page Testing"
-          ],
-          "duration": 37,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Ask Lumi Page Testing [C28] Verify Voice Input Button Exists",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C28] Verify Voice Input Button Exists"
-        },
-        {
-          "ancestorTitles": [
-            "Ask Lumi Page Testing"
-          ],
-          "duration": 54,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Ask Lumi Page Testing [C29] Verify Submit Button Exists",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C29] Verify Submit Button Exists"
-        },
-        {
-          "ancestorTitles": [
-            "Ask Lumi Page Testing"
-          ],
-          "duration": 43,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Ask Lumi Page Testing [C30] Verify Settings Dropdown Works",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C30] Verify Settings Dropdown Works"
-        },
-        {
-          "ancestorTitles": [
-            "Ask Lumi Page Testing"
-          ],
-          "duration": 59,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Ask Lumi Page Testing [C31] Verify Links in Settings Dropdown",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C31] Verify Links in Settings Dropdown"
+          "title": "should throw an error for invalid action"
         }
       ],
       "failureMessage": null
@@ -853,10 +163,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747185714998,
-        "runtime": 315,
+        "end": 1747224222690,
+        "runtime": 2167,
         "slow": false,
-        "start": 1747185714683
+        "start": 1747224220523
       },
       "skipped": false,
       "snapshot": {
@@ -874,7 +184,7 @@
           "ancestorTitles": [
             "Admin Page Unit Testing"
           ],
-          "duration": 4,
+          "duration": 8,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Admin Page Unit Testing should navigate to Manage Users page",
@@ -916,7 +226,7 @@
           "ancestorTitles": [
             "Admin Page Unit Testing"
           ],
-          "duration": 0,
+          "duration": 1,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Admin Page Unit Testing should navigate to Global Announcements page",
@@ -944,7 +254,7 @@
           "ancestorTitles": [
             "Admin Page Unit Testing"
           ],
-          "duration": 1,
+          "duration": 0,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Admin Page Unit Testing should navigate to Ask Lumi page",
@@ -958,7 +268,7 @@
           "ancestorTitles": [
             "Admin Page Unit Testing"
           ],
-          "duration": 20,
+          "duration": 13,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Admin Page Unit Testing should throw an error for invalid action",
@@ -979,10 +289,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747185715490,
-        "runtime": 4878,
+        "end": 1747224222707,
+        "runtime": 2141,
         "slow": false,
-        "start": 1747185710612
+        "start": 1747224220566
       },
       "skipped": false,
       "snapshot": {
@@ -994,19 +304,19 @@
         "unmatched": 0,
         "updated": 0
       },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\account_setting.test.js",
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\navigate.test.js",
       "testResults": [
         {
           "ancestorTitles": [],
-          "duration": 4,
+          "duration": 10,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "Account page displays user email",
+          "fullName": "navigate to voice page",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "status": "passed",
-          "title": "Account page displays user email"
+          "title": "navigate to voice page"
         }
       ],
       "failureMessage": null
@@ -1014,15 +324,519 @@
     {
       "leaks": false,
       "numFailingTests": 0,
+      "numPassingTests": 8,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747224222717,
+        "runtime": 2284,
+        "slow": false,
+        "start": 1747224220433
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\admin.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Admin Role Page Testing"
+          ],
+          "duration": 80,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Admin Role Page Testing [C133] Visual Consistency Check",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C133] Visual Consistency Check"
+        },
+        {
+          "ancestorTitles": [
+            "Admin Role Page Testing"
+          ],
+          "duration": 11,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Admin Role Page Testing [C135] Admin Page Access Control",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C135] Admin Page Access Control"
+        },
+        {
+          "ancestorTitles": [
+            "Admin Role Page Testing"
+          ],
+          "duration": 36,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Admin Role Page Testing [C136] Manage Users Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C136] Manage Users Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Admin Role Page Testing"
+          ],
+          "duration": 34,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Admin Role Page Testing [C137] Role Access Control Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C137] Role Access Control Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Admin Role Page Testing"
+          ],
+          "duration": 11,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Admin Role Page Testing [C138] Platform Stats Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C138] Platform Stats Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Admin Role Page Testing"
+          ],
+          "duration": 28,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Admin Role Page Testing [C139] Global Announcements Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C139] Global Announcements Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Admin Role Page Testing"
+          ],
+          "duration": 18,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Admin Role Page Testing [C140] System Settings Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C140] System Settings Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Admin Role Page Testing"
+          ],
+          "duration": 14,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Admin Role Page Testing [C141] Ask Lumi Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C141] Ask Lumi Button Functionality"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 8,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747224222703,
+        "runtime": 2333,
+        "slow": false,
+        "start": 1747224220370
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\role.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 96,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Role Selection Page Testing [C105] Verify Role Selection Page Loads Successfully",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C105] Verify Role Selection Page Loads Successfully"
+        },
+        {
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 14,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Role Selection Page Testing [C106] Verify Role Selection for Student",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C106] Verify Role Selection for Student"
+        },
+        {
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 18,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Role Selection Page Testing [C107] Verify Role Selection for Instructor",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C107] Verify Role Selection for Instructor"
+        },
+        {
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 25,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Role Selection Page Testing [C108] Verify Role Selection for LMS Admin",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C108] Verify Role Selection for LMS Admin"
+        },
+        {
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 18,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Role Selection Page Testing [C109] Verify Logo is Displayed",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C109] Verify Logo is Displayed"
+        },
+        {
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 13,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Role Selection Page Testing [C110] Verify Navigation for Student Role",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C110] Verify Navigation for Student Role"
+        },
+        {
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 10,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Role Selection Page Testing [C111] Verify Visibility of Role Selection Buttons",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C111] Verify Visibility of Role Selection Buttons"
+        },
+        {
+          "ancestorTitles": [
+            "Role Selection Page Testing"
+          ],
+          "duration": 36,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Role Selection Page Testing [C112] Verify Navigation for LMS Admin Role",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C112] Verify Navigation for LMS Admin Role"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 6,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747224222797,
+        "runtime": 2337,
+        "slow": false,
+        "start": 1747224220460
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\ask_lumi.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page Testing"
+          ],
+          "duration": 106,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Testing [C26] Verify Ask Lumi Page Loads Successfully",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C26] Verify Ask Lumi Page Loads Successfully"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page Testing"
+          ],
+          "duration": 25,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Testing [C27] Verify Question Input Exists",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C27] Verify Question Input Exists"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page Testing"
+          ],
+          "duration": 31,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Testing [C28] Verify Voice Input Button Exists",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C28] Verify Voice Input Button Exists"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page Testing"
+          ],
+          "duration": 20,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Testing [C29] Verify Submit Button Exists",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C29] Verify Submit Button Exists"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page Testing"
+          ],
+          "duration": 39,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Testing [C30] Verify Settings Dropdown Works",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C30] Verify Settings Dropdown Works"
+        },
+        {
+          "ancestorTitles": [
+            "Ask Lumi Page Testing"
+          ],
+          "duration": 35,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Ask Lumi Page Testing [C31] Verify Links in Settings Dropdown",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C31] Verify Links in Settings Dropdown"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 6,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747224222972,
+        "runtime": 2502,
+        "slow": false,
+        "start": 1747224220470
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\voice_setting.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Voice Settings Page Testing"
+          ],
+          "duration": 159,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Settings Page Testing [C20] Enable/Disable Voice Input",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C20] Enable/Disable Voice Input"
+        },
+        {
+          "ancestorTitles": [
+            "Voice Settings Page Testing"
+          ],
+          "duration": 53,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Settings Page Testing [C21] Select Speech Mode Option",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C21] Select Speech Mode Option"
+        },
+        {
+          "ancestorTitles": [
+            "Voice Settings Page Testing"
+          ],
+          "duration": 41,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Settings Page Testing [C22] Change Language Option",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C22] Change Language Option"
+        },
+        {
+          "ancestorTitles": [
+            "Voice Settings Page Testing"
+          ],
+          "duration": 27,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Settings Page Testing [C23] Change Auto-Delete Option",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C23] Change Auto-Delete Option"
+        },
+        {
+          "ancestorTitles": [
+            "Voice Settings Page Testing"
+          ],
+          "duration": 31,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Settings Page Testing [C24] Save Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C24] Save Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Voice Settings Page Testing"
+          ],
+          "duration": 28,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Voice Settings Page Testing [C25] Navigation to Settings Page",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C25] Navigation to Settings Page"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 7,
       "numPassingTests": 1,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747185715492,
-        "runtime": 4899,
+        "end": 1747224222993,
+        "runtime": 2488,
         "slow": false,
-        "start": 1747185710593
+        "start": 1747224220505
       },
       "skipped": false,
       "snapshot": {
@@ -1037,16 +851,530 @@
       "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\student.test.js",
       "testResults": [
         {
-          "ancestorTitles": [],
-          "duration": 2,
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 142,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "Student page renders correctly",
+          "fullName": "Student Role Page Integration Testing [C113] Verify Student Role Page Loads Successfully",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "status": "passed",
-          "title": "Student page renders correctly"
+          "title": "[C113] Verify Student Role Page Loads Successfully"
+        },
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 37,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"enrolled-courses.html\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"enrolled-courses.html\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\student.test.js:39:36)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:218:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:155:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C114] Verify Enrolled Courses Card Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C114] Verify Enrolled Courses Card Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 13,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"upcoming-deadlines.html\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"upcoming-deadlines.html\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\student.test.js:45:36)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:218:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:155:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C115] Verify Upcoming Deadlines Card Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C115] Verify Upcoming Deadlines Card Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 14,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"submit-assignment.html\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"submit-assignment.html\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\student.test.js:51:36)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:218:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:155:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C116] Verify Submit Assignment Card Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C116] Verify Submit Assignment Card Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 13,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"view-grades.html\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"view-grades.html\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\student.test.js:57:36)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:218:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:155:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C117] Verify View Grades Card Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C117] Verify View Grades Card Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 11,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"notifications.html\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"notifications.html\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\student.test.js:63:36)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:218:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:155:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C118] Verify Notifications Card Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C118] Verify Notifications Card Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 22,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"ask-lumi.html\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m\"ask-lumi.html\"\u001b[39m\n\nNumber of calls: \u001b[31m0\u001b[39m\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\student.test.js:69:36)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:218:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:155:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C121] Verify Ask Lumi Card Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C121] Verify Ask Lumi Card Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 26,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": "",
+                "expected": "pointer",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"pointer\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"pointer\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\n    at forEach (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\student.test.js:76:33)\n    at Proxy.forEach (<anonymous>)\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\student.test.js:74:11)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:218:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:155:3)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C122] Verify Button Hover Effects",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C122] Verify Button Hover Effects"
+        }
+      ],
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C114] Verify Enrolled Courses Card Functionality\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected: \u001b[32m\"enrolled-courses.html\"\u001b[39m\n\n    Number of calls: \u001b[31m0\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 37 |\u001b[39m     \u001b[36mconst\u001b[39m card \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelector(\u001b[32m\".card:nth-child(1)\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 38 |\u001b[39m     card\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 39 |\u001b[39m     expect(window\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39massign)\u001b[33m.\u001b[39mtoHaveBeenCalledWith(\u001b[32m\"enrolled-courses.html\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 40 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 41 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 42 |\u001b[39m   test(\u001b[32m\"[C115] Verify Upcoming Deadlines Card Functionality\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/student.test.js\u001b[39m\u001b[0m\u001b[2m:39:36)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C115] Verify Upcoming Deadlines Card Functionality\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected: \u001b[32m\"upcoming-deadlines.html\"\u001b[39m\n\n    Number of calls: \u001b[31m0\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 43 |\u001b[39m     \u001b[36mconst\u001b[39m card \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelector(\u001b[32m\".card:nth-child(2)\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 44 |\u001b[39m     card\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 45 |\u001b[39m     expect(window\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39massign)\u001b[33m.\u001b[39mtoHaveBeenCalledWith(\u001b[32m\"upcoming-deadlines.html\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 46 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 47 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 48 |\u001b[39m   test(\u001b[32m\"[C116] Verify Submit Assignment Card Functionality\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/student.test.js\u001b[39m\u001b[0m\u001b[2m:45:36)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C116] Verify Submit Assignment Card Functionality\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected: \u001b[32m\"submit-assignment.html\"\u001b[39m\n\n    Number of calls: \u001b[31m0\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 49 |\u001b[39m     \u001b[36mconst\u001b[39m card \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelector(\u001b[32m\".card:nth-child(3)\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 50 |\u001b[39m     card\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 51 |\u001b[39m     expect(window\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39massign)\u001b[33m.\u001b[39mtoHaveBeenCalledWith(\u001b[32m\"submit-assignment.html\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 52 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 53 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 54 |\u001b[39m   test(\u001b[32m\"[C117] Verify View Grades Card Functionality\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/student.test.js\u001b[39m\u001b[0m\u001b[2m:51:36)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C117] Verify View Grades Card Functionality\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected: \u001b[32m\"view-grades.html\"\u001b[39m\n\n    Number of calls: \u001b[31m0\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 55 |\u001b[39m     \u001b[36mconst\u001b[39m card \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelector(\u001b[32m\".card:nth-child(4)\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 56 |\u001b[39m     card\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 57 |\u001b[39m     expect(window\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39massign)\u001b[33m.\u001b[39mtoHaveBeenCalledWith(\u001b[32m\"view-grades.html\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 58 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 59 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 60 |\u001b[39m   test(\u001b[32m\"[C118] Verify Notifications Card Functionality\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/student.test.js\u001b[39m\u001b[0m\u001b[2m:57:36)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C118] Verify Notifications Card Functionality\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected: \u001b[32m\"notifications.html\"\u001b[39m\n\n    Number of calls: \u001b[31m0\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 61 |\u001b[39m     \u001b[36mconst\u001b[39m card \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelector(\u001b[32m\".card:nth-child(5)\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 62 |\u001b[39m     card\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 63 |\u001b[39m     expect(window\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39massign)\u001b[33m.\u001b[39mtoHaveBeenCalledWith(\u001b[32m\"notifications.html\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 64 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 65 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 66 |\u001b[39m   test(\u001b[32m\"[C121] Verify Ask Lumi Card Functionality\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/student.test.js\u001b[39m\u001b[0m\u001b[2m:63:36)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C121] Verify Ask Lumi Card Functionality\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).\u001b[22mtoHaveBeenCalledWith\u001b[2m(\u001b[22m\u001b[32m...expected\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected: \u001b[32m\"ask-lumi.html\"\u001b[39m\n\n    Number of calls: \u001b[31m0\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 67 |\u001b[39m     \u001b[36mconst\u001b[39m card \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelector(\u001b[32m\".card:nth-child(6)\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 68 |\u001b[39m     card\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 69 |\u001b[39m     expect(window\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39massign)\u001b[33m.\u001b[39mtoHaveBeenCalledWith(\u001b[32m\"ask-lumi.html\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 70 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 71 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 72 |\u001b[39m   test(\u001b[32m\"[C122] Verify Button Hover Effects\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/student.test.js\u001b[39m\u001b[0m\u001b[2m:69:36)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C122] Verify Button Hover Effects\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"pointer\"\u001b[39m\n    Received: \u001b[31m\"\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 74 |\u001b[39m     cards\u001b[33m.\u001b[39mforEach(card \u001b[33m=>\u001b[39m {\u001b[22m\n\u001b[2m     \u001b[90m 75 |\u001b[39m       card\u001b[33m.\u001b[39mdispatchEvent(\u001b[36mnew\u001b[39m \u001b[33mEvent\u001b[39m(\u001b[32m'mouseover'\u001b[39m))\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 76 |\u001b[39m       expect(card\u001b[33m.\u001b[39mstyle\u001b[33m.\u001b[39mcursor)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"pointer\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 77 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 78 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 79 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat forEach (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/student.test.js\u001b[39m\u001b[0m\u001b[2m:76:33)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m          at Proxy.forEach (<anonymous>)\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/student.test.js\u001b[39m\u001b[0m\u001b[2m:74:11)\u001b[22m\u001b[2m\u001b[22m\n"
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 8,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747224223034,
+        "runtime": 2510,
+        "slow": false,
+        "start": 1747224220524
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\instructor.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Instructor Role Page Integration Testing"
+          ],
+          "duration": 198,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Instructor Role Page Integration Testing [C123] Manage Courses Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C123] Manage Courses Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Instructor Role Page Integration Testing"
+          ],
+          "duration": 19,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Instructor Role Page Integration Testing [C124] Manage Courses Button Functionality Duplicate",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C124] Manage Courses Button Functionality Duplicate"
+        },
+        {
+          "ancestorTitles": [
+            "Instructor Role Page Integration Testing"
+          ],
+          "duration": 20,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Instructor Role Page Integration Testing [C125] Instructor Page Access Control",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C125] Instructor Page Access Control"
+        },
+        {
+          "ancestorTitles": [
+            "Instructor Role Page Integration Testing"
+          ],
+          "duration": 17,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Instructor Role Page Integration Testing [C126] Upload Materials Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C126] Upload Materials Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Instructor Role Page Integration Testing"
+          ],
+          "duration": 20,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Instructor Role Page Integration Testing [C127] Grade Submissions Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C127] Grade Submissions Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Instructor Role Page Integration Testing"
+          ],
+          "duration": 24,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Instructor Role Page Integration Testing [C128] Set Deadlines Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C128] Set Deadlines Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Instructor Role Page Integration Testing"
+          ],
+          "duration": 24,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Instructor Role Page Integration Testing [C129] Announcements Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C129] Announcements Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Instructor Role Page Integration Testing"
+          ],
+          "duration": 16,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Instructor Role Page Integration Testing [C130] Ask Lumi Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C130] Ask Lumi Button Functionality"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747224223203,
+        "runtime": 363,
+        "slow": false,
+        "start": 1747224222840
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\role.unit.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "handleRole Function Unit Test"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "handleRole Function Unit Test should navigate to student page",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should navigate to student page"
+        },
+        {
+          "ancestorTitles": [
+            "handleRole Function Unit Test"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "handleRole Function Unit Test should navigate to admin page",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should navigate to admin page"
+        },
+        {
+          "ancestorTitles": [
+            "handleRole Function Unit Test"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "handleRole Function Unit Test should navigate to instructor page",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should navigate to instructor page"
+        },
+        {
+          "ancestorTitles": [
+            "handleRole Function Unit Test"
+          ],
+          "duration": 7,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "handleRole Function Unit Test should throw an error for invalid role",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should throw an error for invalid role"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747224223202,
+        "runtime": 366,
+        "slow": false,
+        "start": 1747224222836
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\settings.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Settings Page Testing"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Settings Page Testing [C98] Navigate to Voice Settings",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C98] Navigate to Voice Settings"
+        },
+        {
+          "ancestorTitles": [
+            "Settings Page Testing"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Settings Page Testing [C99] Navigate to Preferences Settings",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C99] Navigate to Preferences Settings"
+        },
+        {
+          "ancestorTitles": [
+            "Settings Page Testing"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Settings Page Testing [C101] Navigate to Notifications Settings",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C101] Navigate to Notifications Settings"
+        },
+        {
+          "ancestorTitles": [
+            "Settings Page Testing"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Settings Page Testing [C102] Navigate to Account Settings",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C102] Navigate to Account Settings"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747224223934,
+        "runtime": 186,
+        "slow": false,
+        "start": 1747224223748
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\sample.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "basic sample test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "basic sample test"
         }
       ],
       "failureMessage": null
@@ -1059,10 +1387,74 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747185715524,
-        "runtime": 4894,
+        "end": 1747224223970,
+        "runtime": 199,
         "slow": false,
-        "start": 1747185710630
+        "start": 1747224223771
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\sample.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "C3 - Submit Button works",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "C3 - Submit Button works"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "C4 - Email field accepts valid input",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "C4 - Email field accepts valid input"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "C5 - Validation fails on empty form",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "C5 - Validation fails on empty form"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747224224052,
+        "runtime": 3649,
+        "slow": false,
+        "start": 1747224220403
       },
       "skipped": false,
       "snapshot": {
@@ -1080,7 +1472,7 @@
           "ancestorTitles": [
             "Notifications Settings Page Testing"
           ],
-          "duration": 110,
+          "duration": 93,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Notifications Settings Page Testing [C47] Toggle Push Notifications and Save",
@@ -1094,7 +1486,7 @@
           "ancestorTitles": [
             "Notifications Settings Page Testing"
           ],
-          "duration": 21,
+          "duration": 9,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Notifications Settings Page Testing [C48] Toggle Email Alerts and Save",
@@ -1108,7 +1500,7 @@
           "ancestorTitles": [
             "Notifications Settings Page Testing"
           ],
-          "duration": 13,
+          "duration": 11,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Notifications Settings Page Testing [C49] Change Sound to Enabled and Save",
@@ -1124,15 +1516,15 @@
     {
       "leaks": false,
       "numFailingTests": 0,
-      "numPassingTests": 2,
+      "numPassingTests": 1,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747185715547,
-        "runtime": 4953,
+        "end": 1747224224165,
+        "runtime": 3591,
         "slow": false,
-        "start": 1747185710594
+        "start": 1747224220574
       },
       "skipped": false,
       "snapshot": {
@@ -1144,34 +1536,158 @@
         "unmatched": 0,
         "updated": 0
       },
-      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\script.test.js",
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\account_setting.test.js",
       "testResults": [
         {
           "ancestorTitles": [],
-          "duration": 139,
+          "duration": 3,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "[C101] should have a title",
+          "fullName": "Account page displays user email",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "status": "passed",
-          "title": "[C101] should have a title"
-        },
-        {
-          "ancestorTitles": [],
-          "duration": 29,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "[C102] should have some buttons",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "status": "passed",
-          "title": "[C102] should have some buttons"
+          "title": "Account page displays user email"
         }
       ],
       "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 6,
+      "numPassingTests": 0,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747224224167,
+        "runtime": 3721,
+        "slow": false,
+        "start": 1747224220446
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\Student.unit.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 1515,
+          "failureDetails": [
+            {}
+          ],
+          "failureMessages": [
+            "TypeError: Could not parse \"[object Object]\" as a URL\n    at LocationImpl.set href [as href] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\living\\window\\Location-impl.js:43:13)\n    at Location.set href [as href] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\living\\generated\\Location.js:125:37)\n    at Reflect.set (<anonymous>)\n    at Window.set location [as location] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\browser\\Window.js:424:15)\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\Student.unit.test.js:27:20)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusHook (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:181:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:148:5)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C113] Verify Enrolled Courses Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C113] Verify Enrolled Courses Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 11,
+          "failureDetails": [
+            {}
+          ],
+          "failureMessages": [
+            "TypeError: Could not parse \"[object Object]\" as a URL\n    at LocationImpl.set href [as href] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\living\\window\\Location-impl.js:43:13)\n    at Location.set href [as href] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\living\\generated\\Location.js:125:37)\n    at Reflect.set (<anonymous>)\n    at Window.set location [as location] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\browser\\Window.js:424:15)\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\Student.unit.test.js:27:20)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusHook (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:181:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:148:5)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C114] Verify Upcoming Deadlines Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C114] Verify Upcoming Deadlines Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 17,
+          "failureDetails": [
+            {}
+          ],
+          "failureMessages": [
+            "TypeError: Could not parse \"[object Object]\" as a URL\n    at LocationImpl.set href [as href] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\living\\window\\Location-impl.js:43:13)\n    at Location.set href [as href] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\living\\generated\\Location.js:125:37)\n    at Reflect.set (<anonymous>)\n    at Window.set location [as location] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\browser\\Window.js:424:15)\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\Student.unit.test.js:27:20)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusHook (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:181:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:148:5)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C115] Verify Submit Assignment Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C115] Verify Submit Assignment Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 10,
+          "failureDetails": [
+            {}
+          ],
+          "failureMessages": [
+            "TypeError: Could not parse \"[object Object]\" as a URL\n    at LocationImpl.set href [as href] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\living\\window\\Location-impl.js:43:13)\n    at Location.set href [as href] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\living\\generated\\Location.js:125:37)\n    at Reflect.set (<anonymous>)\n    at Window.set location [as location] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\browser\\Window.js:424:15)\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\Student.unit.test.js:27:20)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusHook (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:181:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:148:5)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C116] Verify Notifications Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C116] Verify Notifications Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 10,
+          "failureDetails": [
+            {}
+          ],
+          "failureMessages": [
+            "TypeError: Could not parse \"[object Object]\" as a URL\n    at LocationImpl.set href [as href] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\living\\window\\Location-impl.js:43:13)\n    at Location.set href [as href] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\living\\generated\\Location.js:125:37)\n    at Reflect.set (<anonymous>)\n    at Window.set location [as location] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\browser\\Window.js:424:15)\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\Student.unit.test.js:27:20)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusHook (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:181:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:148:5)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C117] Verify View Grades Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C117] Verify View Grades Button Functionality"
+        },
+        {
+          "ancestorTitles": [
+            "Student Role Page Integration Testing"
+          ],
+          "duration": 15,
+          "failureDetails": [
+            {}
+          ],
+          "failureMessages": [
+            "TypeError: Could not parse \"[object Object]\" as a URL\n    at LocationImpl.set href [as href] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\living\\window\\Location-impl.js:43:13)\n    at Location.set href [as href] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\living\\generated\\Location.js:125:37)\n    at Reflect.set (<anonymous>)\n    at Window.set location [as location] (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jsdom\\lib\\jsdom\\browser\\Window.js:424:15)\n    at Object.<anonymous> (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\Student.unit.test.js:27:20)\n    at Promise.then.completed (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:391:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\utils.js:316:10)\n    at _callCircusHook (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:181:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:148:5)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:66:9)\n    at _runTestsForDescribeBlock (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:60:9)\n    at run (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\run.js:25:3)\n    at runAndTransformResultsToJestFormat (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:170:21)\n    at jestAdapter (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:82:19)\n    at runTestInternal (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:389:16)\n    at runTest (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\runTest.js:475:34)\n    at Object.worker (C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\node_modules\\jest-runner\\build\\testWorker.js:133:12)"
+          ],
+          "fullName": "Student Role Page Integration Testing [C118] Verify Ask Lumi Button Functionality",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "failed",
+          "title": "[C118] Verify Ask Lumi Button Functionality"
+        }
+      ],
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C113] Verify Enrolled Courses Button Functionality\u001b[39m\u001b[22m\n\n    TypeError: Could not parse \"[object Object]\" as a URL\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 25 |\u001b[39m     assignMock \u001b[33m=\u001b[39m jest\u001b[33m.\u001b[39mfn()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 26 |\u001b[39m     \u001b[36mdelete\u001b[39m window\u001b[33m.\u001b[39mlocation\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 27 |\u001b[39m     window\u001b[33m.\u001b[39mlocation \u001b[33m=\u001b[39m { assign\u001b[33m:\u001b[39m assignMock }\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 28 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 29 |\u001b[39m     \u001b[90m// Make window and document available globally\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 30 |\u001b[39m     global\u001b[33m.\u001b[39mwindow \u001b[33m=\u001b[39m window\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat LocationImpl.set href [as href] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/living/window/Location-impl.js\u001b[2m:43:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Location.set href [as href] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/living/generated/Location.js\u001b[2m:125:37)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m          at Reflect.set (<anonymous>)\u001b[22m\n\u001b[2m      \u001b[2mat Window.set location [as location] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/browser/Window.js\u001b[2m:424:15)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/Student.unit.test.js\u001b[39m\u001b[0m\u001b[2m:27:20)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C114] Verify Upcoming Deadlines Button Functionality\u001b[39m\u001b[22m\n\n    TypeError: Could not parse \"[object Object]\" as a URL\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 25 |\u001b[39m     assignMock \u001b[33m=\u001b[39m jest\u001b[33m.\u001b[39mfn()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 26 |\u001b[39m     \u001b[36mdelete\u001b[39m window\u001b[33m.\u001b[39mlocation\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 27 |\u001b[39m     window\u001b[33m.\u001b[39mlocation \u001b[33m=\u001b[39m { assign\u001b[33m:\u001b[39m assignMock }\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 28 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 29 |\u001b[39m     \u001b[90m// Make window and document available globally\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 30 |\u001b[39m     global\u001b[33m.\u001b[39mwindow \u001b[33m=\u001b[39m window\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat LocationImpl.set href [as href] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/living/window/Location-impl.js\u001b[2m:43:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Location.set href [as href] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/living/generated/Location.js\u001b[2m:125:37)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m          at Reflect.set (<anonymous>)\u001b[22m\n\u001b[2m      \u001b[2mat Window.set location [as location] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/browser/Window.js\u001b[2m:424:15)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/Student.unit.test.js\u001b[39m\u001b[0m\u001b[2m:27:20)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C115] Verify Submit Assignment Button Functionality\u001b[39m\u001b[22m\n\n    TypeError: Could not parse \"[object Object]\" as a URL\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 25 |\u001b[39m     assignMock \u001b[33m=\u001b[39m jest\u001b[33m.\u001b[39mfn()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 26 |\u001b[39m     \u001b[36mdelete\u001b[39m window\u001b[33m.\u001b[39mlocation\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 27 |\u001b[39m     window\u001b[33m.\u001b[39mlocation \u001b[33m=\u001b[39m { assign\u001b[33m:\u001b[39m assignMock }\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 28 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 29 |\u001b[39m     \u001b[90m// Make window and document available globally\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 30 |\u001b[39m     global\u001b[33m.\u001b[39mwindow \u001b[33m=\u001b[39m window\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat LocationImpl.set href [as href] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/living/window/Location-impl.js\u001b[2m:43:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Location.set href [as href] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/living/generated/Location.js\u001b[2m:125:37)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m          at Reflect.set (<anonymous>)\u001b[22m\n\u001b[2m      \u001b[2mat Window.set location [as location] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/browser/Window.js\u001b[2m:424:15)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/Student.unit.test.js\u001b[39m\u001b[0m\u001b[2m:27:20)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C116] Verify Notifications Button Functionality\u001b[39m\u001b[22m\n\n    TypeError: Could not parse \"[object Object]\" as a URL\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 25 |\u001b[39m     assignMock \u001b[33m=\u001b[39m jest\u001b[33m.\u001b[39mfn()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 26 |\u001b[39m     \u001b[36mdelete\u001b[39m window\u001b[33m.\u001b[39mlocation\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 27 |\u001b[39m     window\u001b[33m.\u001b[39mlocation \u001b[33m=\u001b[39m { assign\u001b[33m:\u001b[39m assignMock }\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 28 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 29 |\u001b[39m     \u001b[90m// Make window and document available globally\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 30 |\u001b[39m     global\u001b[33m.\u001b[39mwindow \u001b[33m=\u001b[39m window\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat LocationImpl.set href [as href] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/living/window/Location-impl.js\u001b[2m:43:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Location.set href [as href] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/living/generated/Location.js\u001b[2m:125:37)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m          at Reflect.set (<anonymous>)\u001b[22m\n\u001b[2m      \u001b[2mat Window.set location [as location] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/browser/Window.js\u001b[2m:424:15)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/Student.unit.test.js\u001b[39m\u001b[0m\u001b[2m:27:20)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C117] Verify View Grades Button Functionality\u001b[39m\u001b[22m\n\n    TypeError: Could not parse \"[object Object]\" as a URL\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 25 |\u001b[39m     assignMock \u001b[33m=\u001b[39m jest\u001b[33m.\u001b[39mfn()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 26 |\u001b[39m     \u001b[36mdelete\u001b[39m window\u001b[33m.\u001b[39mlocation\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 27 |\u001b[39m     window\u001b[33m.\u001b[39mlocation \u001b[33m=\u001b[39m { assign\u001b[33m:\u001b[39m assignMock }\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 28 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 29 |\u001b[39m     \u001b[90m// Make window and document available globally\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 30 |\u001b[39m     global\u001b[33m.\u001b[39mwindow \u001b[33m=\u001b[39m window\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat LocationImpl.set href [as href] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/living/window/Location-impl.js\u001b[2m:43:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Location.set href [as href] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/living/generated/Location.js\u001b[2m:125:37)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m          at Reflect.set (<anonymous>)\u001b[22m\n\u001b[2m      \u001b[2mat Window.set location [as location] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/browser/Window.js\u001b[2m:424:15)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/Student.unit.test.js\u001b[39m\u001b[0m\u001b[2m:27:20)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mStudent Role Page Integration Testing › [C118] Verify Ask Lumi Button Functionality\u001b[39m\u001b[22m\n\n    TypeError: Could not parse \"[object Object]\" as a URL\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 25 |\u001b[39m     assignMock \u001b[33m=\u001b[39m jest\u001b[33m.\u001b[39mfn()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 26 |\u001b[39m     \u001b[36mdelete\u001b[39m window\u001b[33m.\u001b[39mlocation\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 27 |\u001b[39m     window\u001b[33m.\u001b[39mlocation \u001b[33m=\u001b[39m { assign\u001b[33m:\u001b[39m assignMock }\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 28 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 29 |\u001b[39m     \u001b[90m// Make window and document available globally\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 30 |\u001b[39m     global\u001b[33m.\u001b[39mwindow \u001b[33m=\u001b[39m window\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat LocationImpl.set href [as href] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/living/window/Location-impl.js\u001b[2m:43:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Location.set href [as href] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/living/generated/Location.js\u001b[2m:125:37)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m          at Reflect.set (<anonymous>)\u001b[22m\n\u001b[2m      \u001b[2mat Window.set location [as location] (\u001b[22m\u001b[2mnode_modules/jsdom/lib/jsdom/browser/Window.js\u001b[2m:424:15)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/Student.unit.test.js\u001b[39m\u001b[0m\u001b[2m:27:20)\u001b[22m\u001b[2m\u001b[22m\n"
     },
     {
       "leaks": false,
@@ -1181,10 +1697,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747185715619,
-        "runtime": 5020,
-        "slow": true,
-        "start": 1747185710599
+        "end": 1747224224194,
+        "runtime": 3700,
+        "slow": false,
+        "start": 1747224220494
       },
       "skipped": false,
       "snapshot": {
@@ -1202,7 +1718,7 @@
           "ancestorTitles": [
             "Preferences Settings Page Testing"
           ],
-          "duration": 133,
+          "duration": 90,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Preferences Settings Page Testing [C39] Check default preference selections",
@@ -1216,7 +1732,7 @@
           "ancestorTitles": [
             "Preferences Settings Page Testing"
           ],
-          "duration": 35,
+          "duration": 15,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Preferences Settings Page Testing [C40] Change theme preference and save",
@@ -1230,7 +1746,7 @@
           "ancestorTitles": [
             "Preferences Settings Page Testing"
           ],
-          "duration": 24,
+          "duration": 11,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Preferences Settings Page Testing [C41] Change font size and save",
@@ -1258,7 +1774,7 @@
           "ancestorTitles": [
             "Preferences Settings Page Testing"
           ],
-          "duration": 17,
+          "duration": 12,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Preferences Settings Page Testing [C43] Verify app language option",
@@ -1272,7 +1788,7 @@
           "ancestorTitles": [
             "Preferences Settings Page Testing"
           ],
-          "duration": 16,
+          "duration": 18,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Preferences Settings Page Testing [C44] Verify save button without changes",
@@ -1288,15 +1804,67 @@
     {
       "leaks": false,
       "numFailingTests": 0,
+      "numPassingTests": 2,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1747224224204,
+        "runtime": 3597,
+        "slow": false,
+        "start": 1747224220607
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\sheme\\Downloads\\Voice-Enabled-AI-Chatbot\\tests\\script.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 91,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "[C101] should have a title",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C101] should have a title"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 21,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "[C102] should have some buttons",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "[C102] should have some buttons"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
       "numPassingTests": 12,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1747185715723,
-        "runtime": 5113,
-        "slow": true,
-        "start": 1747185710610
+        "end": 1747224224244,
+        "runtime": 3758,
+        "slow": false,
+        "start": 1747224220486
       },
       "skipped": false,
       "snapshot": {
@@ -1314,7 +1882,7 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 119,
+          "duration": 98,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C1] Page Load",
@@ -1328,7 +1896,7 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 31,
+          "duration": 17,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C2] Voice Input - Student ID",
@@ -1342,7 +1910,7 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 27,
+          "duration": 12,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C3] Voice Input - Phone Number",
@@ -1356,7 +1924,7 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 18,
+          "duration": 11,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C4] Voice Input - Email",
@@ -1370,7 +1938,7 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 22,
+          "duration": 11,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C5] Submit Without Filling Fields",
@@ -1384,7 +1952,7 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 16,
+          "duration": 21,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C6] Invalid Student ID Input",
@@ -1398,7 +1966,7 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 19,
+          "duration": 21,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C12] Invalid Phone Number Input",
@@ -1412,7 +1980,7 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 13,
+          "duration": 10,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C7] Invalid Email Input",
@@ -1426,7 +1994,7 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 17,
+          "duration": 18,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C8] Successful Form Submission",
@@ -1440,7 +2008,7 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 18,
+          "duration": 16,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C9] Form Responsiveness",
@@ -1454,7 +2022,7 @@
           "ancestorTitles": [
             "Welcome Page Testing"
           ],
-          "duration": 23,
+          "duration": 10,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Welcome Page Testing [C10] Button Hover Effect",
