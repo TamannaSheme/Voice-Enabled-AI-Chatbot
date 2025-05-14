@@ -2,61 +2,55 @@ const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
 
-// Load the HTML files
-const indexHtml = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf8');
+// Load the HTML file
 const instructorHtml = fs.readFileSync(path.resolve(__dirname, '../instructor.html'), 'utf8');
 
 let dom, document;
 
-describe('Welcome Page Testing', () => {
-  beforeEach(() => {
-    dom = new JSDOM(indexHtml, { runScripts: 'dangerously' });
-    document = dom.window.document;
-  });
-
-  test('[C1] Page Load', () => {
-    expect(document).not.toBeNull();
-  });
-
-  test('[C2] Voice Input - Student ID', () => {
-    const input = document.querySelector('#student-id');
-    expect(input).not.toBeNull();
-  });
-
-  test('[C3] Form Responsiveness', () => {
-    const container = document.querySelector('.form-card');
-    expect(container).not.toBeNull();
-  });
-
-  test('[C4] Submit Button Exists', () => {
-    const button = document.querySelector('.button-orange');
-    expect(button).not.toBeNull();
-  });
-
-  test('[C5] Voice Recognition Error Handling', () => {
-    const voiceError = document.querySelector('#voice-error');
-    expect(voiceError).not.toBeNull();
-  });
-});
-
-describe('Instructor Dashboard Testing', () => {
+describe('Instructor Role Page Testing', () => {
   beforeEach(() => {
     dom = new JSDOM(instructorHtml, { runScripts: 'dangerously' });
     document = dom.window.document;
   });
 
-  test('[C1] Dashboard Load', () => {
+  test('[C123] Manage Courses Button Functionality', () => {
+    const manageCourses = document.querySelector('.card:nth-child(1)');
+    expect(manageCourses.textContent).toContain('Manage Courses');
+  });
+
+  test('[C124] Upload Materials Button Functionality', () => {
+    const uploadMaterials = document.querySelector('.card:nth-child(2)');
+    expect(uploadMaterials.textContent).toContain('Upload Materials');
+  });
+
+  test('[C125] Instructor Page Access Control', () => {
+    const header = document.querySelector('h1');
+    expect(header.textContent).toContain('Welcome, Instructor');
+  });
+
+  test('[C126] Grade Submissions Button Functionality', () => {
+    const gradeSubmissions = document.querySelector('.card:nth-child(3)');
+    expect(gradeSubmissions.textContent).toContain('Grade Submissions');
+  });
+
+  test('[C127] Set Deadlines Button Functionality', () => {
+    const setDeadlines = document.querySelector('.card:nth-child(4)');
+    expect(setDeadlines.textContent).toContain('Set Deadlines');
+  });
+
+  test('[C128] Announcements Button Functionality', () => {
+    const announcements = document.querySelector('.card:nth-child(5)');
+    expect(announcements.textContent).toContain('Announcements');
+  });
+
+  test('[C129] Ask Lumi Button Functionality', () => {
+    const askLumi = document.querySelector('.card:nth-child(6)');
+    expect(askLumi.textContent).toContain('Ask Lumi');
+  });
+
+  test('[C130] Page Load and Role Verification', () => {
     expect(document).not.toBeNull();
-  });
-
-  test('[C2] All Action Cards Present', () => {
-    const cards = document.querySelectorAll('.card');
-    expect(cards.length).toBe(6);
-  });
-
-  test('[C3] Role Navigation', () => {
-    const role = 'instructor';
-    const roleFunction = require('../js/role.js');
-    expect(() => roleFunction.handleRole(role)).not.toThrow();
+    const header = document.querySelector('h1');
+    expect(header.textContent).toContain('Instructor');
   });
 });
