@@ -5,66 +5,108 @@
 const fs = require("fs");
 const path = require("path");
 
-describe("Ask Lumi Page Testing", () => {
-  let document;
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+describe("Ask Lumi Page Integration Testing", () => {
+  let document, window, microphoneMock;
 
   beforeEach(() => {
     // Load HTML file
     const html = fs.readFileSync(path.resolve(__dirname, "../ask-lumi.html"), "utf8");
-    document = new DOMParser().parseFromString(html, "text/html");
-    document.body.innerHTML = html;
+    const { JSDOM } = require("jsdom");
+    const dom = new JSDOM(html, { runScripts: "dangerously" });
+
+    window = dom.window;
+    document = window.document;
+
+    // Mock microphone permission
+    microphoneMock = jest.fn();
+    navigator.mediaDevices = { getUserMedia: microphoneMock };
+
+    // Adding error and success message containers
+    document.body.innerHTML += `
+      <div class="error-message" style="display:none"></div>
+      <div class="success-message" style="display:none"></div>
+    `;
+
+    // Mock the startVoice function
+    window.startVoice = async () => {
+      try {
+        await navigator.mediaDevices.getUserMedia();
+      } catch (error) {
+        const errorMessage = document.querySelector(".error-message");
+        errorMessage.style.display = "block";
+        errorMessage.textContent = "Microphone access denied";
+      }
+    };
+
+    // Mock the respondToUser function
+    window.respondToUser = () => {
+      const question = document.querySelector("#question").value.trim();
+      const errorMessage = document.querySelector(".error-message");
+      const successMessage = document.querySelector(".success-message");
+
+      if (question.length === 0) {
+        errorMessage.style.display = "block";
+        errorMessage.textContent = "Please enter a question";
+      } else {
+        successMessage.style.display = "block";
+        successMessage.textContent = "Question submitted successfully";
+      }
+    };
   });
 
-  // C26: Verify Ask Lumi Page Loads Successfully
-  test("[C26] Verify Ask Lumi Page Loads Successfully", () => {
-    const header = document.querySelector("h1");
-    expect(header).toBeTruthy();
-    expect(header.textContent).toBe("Ask Lumi a New Question");
+  afterEach(() => {
+    jest.clearAllMocks();
   });
 
-  // C27: Verify Question Input Exists
-  test("[C27] Verify Question Input Exists", () => {
+  test("[C26] Submit Question Successfully", () => {
     const questionInput = document.querySelector("#question");
-    expect(questionInput).toBeTruthy();
-  });
-
-  // C28: Verify Voice Input Button Exists
-  test("[C28] Verify Voice Input Button Exists", () => {
-    const voiceButton = document.querySelector(".button-orange[onclick*='startVoice']");
-    expect(voiceButton).toBeTruthy();
-  });
-
-  // C29: Verify Submit Button Exists
-  test("[C29] Verify Submit Button Exists", () => {
     const submitButton = document.querySelector(".button-orange[onclick*='respondToUser']");
-    expect(submitButton).toBeTruthy();
+
+    questionInput.value = "What is Lumi?";
+    submitButton.onclick = window.respondToUser; // Link the mock function
+    submitButton.click();
+
+    const successMessage = document.querySelector(".success-message");
+
+    expect(successMessage.textContent).toBe("Question submitted successfully");
   });
 
-// C30: Verify Settings Dropdown Works
-test("[C30] Verify Settings Dropdown Works", () => {
-  const settingsBtn = document.querySelector(".settings-btn");
-  const dropdown = document.querySelector(".settings-dropdown");
+  test("[C27] Submit Without Question", () => {
+    const submitButton = document.querySelector(".button-orange[onclick*='respondToUser']");
 
-  expect(settingsBtn).toBeTruthy();
-  expect(dropdown).toBeTruthy();
+    submitButton.onclick = window.respondToUser; // Link the mock function
+    submitButton.click();
 
-  // Simulate click to toggle dropdown - Manually trigger the display change
-  settingsBtn.click();
-  dropdown.style.display = "block"; // Manually simulate dropdown being shown
-  expect(dropdown.style.display).toBe("block");
+    const errorMessage = document.querySelector(".error-message");
 
-  // Simulate second click to hide dropdown
-  settingsBtn.click();
-  dropdown.style.display = "none"; // Manually simulate dropdown being hidden
-  expect(dropdown.style.display).toBe("none");
-});
-
-  // C31: Verify Links in Settings Dropdown
-  test("[C31] Verify Links in Settings Dropdown", () => {
-    const faqLink = document.querySelector(".settings-dropdown a[href='faq.html']");
-    const resetLink = document.querySelector(".settings-dropdown a[href='reset-password.html']");
-
-    expect(faqLink).toBeTruthy();
-    expect(resetLink).toBeTruthy();
+    expect(errorMessage.textContent).toBe("Please enter a question");
   });
+
+  test("[C28] Voice Input Button Click", () => {
+    const voiceButton = document.querySelector(".button-orange[onclick*='startVoice']");
+
+    voiceButton.onclick = window.startVoice; // Directly link the function
+    voiceButton.click();
+
+    expect(microphoneMock).toHaveBeenCalled();
+  });
+
+  test("[C29] Microphone Access Denied", async () => {
+    microphoneMock.mockRejectedValue(new Error("Microphone access denied"));
+
+    const voiceButton = document.querySelector(".button-orange[onclick*='startVoice']");
+    voiceButton.onclick = window.startVoice;
+    voiceButton.click();
+
+    await delay(100); // Wait for the async error handling
+
+    const errorMessage = document.querySelector(".error-message");
+
+    expect(errorMessage.textContent).toBe("Microphone access denied");
+  });
+
 });

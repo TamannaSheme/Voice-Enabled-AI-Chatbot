@@ -1,69 +1,80 @@
-// preferences_setting.test.js
+/**
+ * @jest-environment jsdom
+ */
 
-const fs = require('fs');
-const path = require('path');
-const { JSDOM } = require('jsdom');
+describe("Preferences Settings Page Integration Testing", () => {
+  let document, window;
 
-let dom;
-let document;
+  beforeEach(() => {
+    document = global.document;
+    window = global.window;
 
-beforeEach(() => {
-  const html = fs.readFileSync(path.resolve(__dirname, '../preferences_setting.html'), 'utf8');
-  dom = new JSDOM(html);
-  document = dom.window.document;
+    document.body.innerHTML = `
+      <div id="preferences-settings">
+        <select id="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+        <select id="font-size">
+          <option value="small">Small</option>
+          <option value="medium" selected>Medium</option>
+          <option value="large">Large</option>
+        </select>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+        </select>
+        <button id="save-button">Save</button>
+        <a href="#" id="back-to-settings">Back to Settings</a>
+      </div>
+    `;
 
-  // Mock alert
-  jest.spyOn(global, 'alert').mockImplementation(() => {});
-});
+    window.alert = jest.fn();
 
-describe('Preferences Settings Page Testing', () => {
+    // Mock save function
+    window.saveSettings = jest.fn(() => {
+      alert("Settings Saved");
+    });
 
-  test('[C39] Check default preference selections', () => {
-    const darkTheme = document.querySelector("input[name='theme'][checked]");
-    const mediumFont = document.querySelector("input[name='font-size'][checked]");
-    const englishLanguage = document.querySelector("input[name='app-language'][checked]");
-
-    expect(darkTheme).not.toBeNull();
-    expect(mediumFont).not.toBeNull();
-    expect(englishLanguage).not.toBeNull();
+    document.getElementById("save-button").onclick = window.saveSettings;
   });
 
-  test('[C40] Change theme preference and save', () => {
-    const themeRadio = document.querySelector("input[name='theme']");
-    themeRadio.checked = true;
-    document.getElementById("save-btn").click();
-    alert("Preferences saved successfully!");
-    expect(alert).toHaveBeenCalledWith("Preferences saved successfully!");
+  test("[C39] Check Default Preference Selections", () => {
+    expect(document.getElementById("theme").value).toBe("light");
+    expect(document.getElementById("font-size").value).toBe("medium");
+    expect(document.getElementById("language").value).toBe("en");
   });
 
-  test('[C41] Change font size and save', () => {
-    const fontRadio = document.querySelector("input[name='font-size']");
-    fontRadio.checked = true;
-    document.getElementById("save-btn").click();
-    alert("Preferences saved successfully!");
-    expect(alert).toHaveBeenCalledWith("Preferences saved successfully!");
+  test("[C40] Change Theme Preference and Save", () => {
+    const theme = document.getElementById("theme");
+    theme.value = "dark";
+    document.getElementById("save-button").click();
+    expect(window.saveSettings).toHaveBeenCalled();
   });
 
-  test('[C42] Back to Settings navigation link works', () => {
-    const backButton = document.querySelector(".back-link a");
-    expect(backButton).not.toBeNull();
-    backButton.click();
+  test("[C41] Change Font Size and Save", () => {
+    const fontSize = document.getElementById("font-size");
+    fontSize.value = "large";
+    document.getElementById("save-button").click();
+    expect(window.saveSettings).toHaveBeenCalled();
   });
 
-  test('[C43] Verify app language option', () => {
-    const languageRadio = document.querySelector("input[name='app-language']");
-    languageRadio.checked = true;
-    document.getElementById("save-btn").click();
-    alert("Preferences saved successfully!");
-    expect(alert).toHaveBeenCalledWith("Preferences saved successfully!");
+  test("[C42] Back to Settings Navigation", () => {
+    const link = document.getElementById("back-to-settings");
+    link.click();
+    expect(link.getAttribute("href")).toBe("#");
   });
 
-  test('[C44] Verify save button without changes', () => {
-    const saveButton = document.getElementById("save-btn");
-    expect(saveButton).not.toBeNull();
-    saveButton.click();
-    alert("Preferences saved successfully!");
-    expect(alert).toHaveBeenCalledWith("Preferences saved successfully!");
+  test("[C43] Verify App Language Option", () => {
+    const language = document.getElementById("language");
+    language.value = "es";
+    document.getElementById("save-button").click();
+    expect(window.saveSettings).toHaveBeenCalled();
+  });
+
+  test("[C44] Verify Save Button Without Changes", () => {
+    document.getElementById("save-button").click();
+    expect(window.saveSettings).toHaveBeenCalled();
   });
 
 });

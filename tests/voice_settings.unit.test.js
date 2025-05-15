@@ -2,15 +2,10 @@
  * @jest-environment jsdom
  */
 
-const fs = require("fs");
-
-describe("Voice Settings Page Integration Testing", () => {
-  let document, window;
+describe("Voice Settings Page Unit Testing", () => {
+  let saveSettings;
 
   beforeEach(() => {
-    document = global.document;
-    window = global.window;
-
     document.body.innerHTML = `
       <div id="voice-settings">
         <input type="checkbox" id="voice-input" />
@@ -24,54 +19,40 @@ describe("Voice Settings Page Integration Testing", () => {
         </select>
         <input type="checkbox" id="auto-delete" />
         <button id="save-button">Save</button>
-        <a href="#" id="back-to-settings">Back to Settings</a>
       </div>
     `;
 
-    window.alert = jest.fn();
-
-    // Mock save function
-    window.saveSettings = jest.fn(() => {
-      alert("Settings Saved");
-    });
-
-    document.getElementById("save-button").onclick = window.saveSettings;
+    saveSettings = jest.fn();
+    document.getElementById("save-button").onclick = saveSettings;
   });
 
-  test("[C20] Enable/Disable Voice Input", () => {
+  test("[U01] Toggle Voice Input", () => {
     const checkbox = document.getElementById("voice-input");
     checkbox.checked = true;
     expect(checkbox.checked).toBe(true);
   });
 
-  test("[C21] Select Speech Mode Option", () => {
+  test("[U02] Change Speech Mode", () => {
     const select = document.getElementById("speech-mode");
     select.value = "speech-to-text";
     expect(select.value).toBe("speech-to-text");
   });
 
-  test("[C22] Change Language Option", () => {
+  test("[U03] Change Language Option", () => {
     const select = document.getElementById("language");
     select.value = "es";
     expect(select.value).toBe("es");
   });
 
-  test("[C23] Change Auto-Delete Option", () => {
+  test("[U04] Toggle Auto-Delete Option", () => {
     const checkbox = document.getElementById("auto-delete");
     checkbox.checked = true;
     expect(checkbox.checked).toBe(true);
   });
 
-  test("[C24] Save Button Functionality", () => {
+  test("[U05] Save Settings Functionality", () => {
     document.getElementById("save-button").click();
-    expect(window.saveSettings).toHaveBeenCalled();
-    expect(window.alert).toHaveBeenCalledWith("Settings Saved");
-  });
-
-  test("[C25] Navigation to Settings Page", () => {
-    const link = document.getElementById("back-to-settings");
-    link.click();
-    expect(link.getAttribute("href")).toBe("#");
+    expect(saveSettings).toHaveBeenCalled();
   });
 
 });

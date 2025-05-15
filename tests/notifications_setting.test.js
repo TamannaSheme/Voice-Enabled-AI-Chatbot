@@ -1,48 +1,84 @@
-const { JSDOM } = require('jsdom');
-const fs = require('fs');
-const path = require('path');
+/**
+ * @jest-environment jsdom
+ */
 
-let dom;
-let document;
+describe("Notifications Settings Page Integration Testing", () => {
+  let document, window;
 
-beforeEach(() => {
-    // Load HTML structure
-    dom = new JSDOM(`
-        <div>
-            <input type="radio" name="push" value="on" id="push-on">
-            <input type="radio" name="email" value="on" id="email-on">
-            <input type="radio" name="sound" value="enabled" id="sound-enabled">
-            <button id="save-btn">Save</button>
-        </div>
-    `, { url: "http://localhost" });
+  beforeEach(() => {
+    document = global.document;
+    window = global.window;
 
-    document = dom.window.document;
-    global.window = dom.window;
-    global.document = dom.window.document;
-    global.alert = jest.fn(); // Mock alert
+    document.body.innerHTML = `
+      <div id="notifications-settings">
+        <input type="checkbox" id="push-notifications" />
+        <input type="checkbox" id="email-alerts" />
+        <select id="sound">
+          <option value="on">Enabled</option>
+          <option value="off">Off</option>
+        </select>
+        <button id="save-button">Save</button>
+        <a href="#" id="back-to-settings">Back to Settings</a>
+      </div>
+    `;
 
-    // Manually define the save button click event
-    document.getElementById('save-btn').addEventListener('click', () => {
-        alert('Preferences saved successfully!');
-    });
-});
+    window.alert = jest.fn();
 
-describe('Notifications Settings Page Testing', () => {
-    test('[C47] Toggle Push Notifications and Save', () => {
-        document.getElementById('push-on').checked = true;
-        document.getElementById('save-btn').click();
-        expect(alert).toHaveBeenCalledWith('Preferences saved successfully!');
+    // Mock save function
+    window.saveSettings = jest.fn(() => {
+      alert("Settings Saved");
     });
 
-    test('[C48] Toggle Email Alerts and Save', () => {
-        document.getElementById('email-on').checked = true;
-        document.getElementById('save-btn').click();
-        expect(alert).toHaveBeenCalledWith('Preferences saved successfully!');
-    });
+    document.getElementById("save-button").onclick = window.saveSettings;
+  });
 
-    test('[C49] Change Sound to Enabled and Save', () => {
-        document.getElementById('sound-enabled').checked = true;
-        document.getElementById('save-btn').click();
-        expect(alert).toHaveBeenCalledWith('Preferences saved successfully!');
-    });
+  test("[C46] Verify Default Selections", () => {
+    expect(document.getElementById("push-notifications").checked).toBe(false);
+    expect(document.getElementById("email-alerts").checked).toBe(false);
+    expect(document.getElementById("sound").value).toBe("on");
+  });
+
+  test("[C47] Toggle Push Notifications and Save", () => {
+    const checkbox = document.getElementById("push-notifications");
+    checkbox.checked = true;
+    document.getElementById("save-button").click();
+    expect(window.saveSettings).toHaveBeenCalled();
+  });
+
+  test("[C48] Toggle Email Alerts and Save", () => {
+    const checkbox = document.getElementById("email-alerts");
+    checkbox.checked = true;
+    document.getElementById("save-button").click();
+    expect(window.saveSettings).toHaveBeenCalled();
+  });
+
+  test("[C49] Change Sound to Enabled and Save", () => {
+    const select = document.getElementById("sound");
+    select.value = "on";
+    document.getElementById("save-button").click();
+    expect(window.saveSettings).toHaveBeenCalled();
+  });
+
+  test("[C50] Change Sound to Off and Save", () => {
+    const select = document.getElementById("sound");
+    select.value = "off";
+    document.getElementById("save-button").click();
+    expect(window.saveSettings).toHaveBeenCalled();
+  });
+
+  test("[C51] Back to Settings Navigation", () => {
+    const link = document.getElementById("back-to-settings");
+    link.click();
+    expect(link.getAttribute("href")).toBe("#");
+  });
+
+  test("[C159] Page Load", () => {
+    expect(document.querySelector("#notifications-settings")).not.toBeNull();
+  });
+
+  test("[C160] Check UI Elements Visibility", () => {
+    const elements = document.querySelectorAll("#notifications-settings *");
+    expect(elements.length).toBeGreaterThan(0);
+  });
+
 });

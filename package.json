@@ -4,6 +4,7 @@
   "type": "commonjs",
   "scripts": {
     "test": "jest --reporters=default --reporters=./customJestReporter.js"
+   
   },
   "devDependencies": {
     "@babel/core": "^7.27.1",
