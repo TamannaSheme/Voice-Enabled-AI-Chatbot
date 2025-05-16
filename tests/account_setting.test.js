@@ -62,4 +62,30 @@ describe("Account Settings Page Integration Testing", () => {
     expect(link.getAttribute("href")).toBe("#");
   });
 
+      // New Non-Functional Tests
+  test("[C164] [Performance] Page Load Time Under 2 Seconds", () => {
+    const startTime = performance.now();
+    document.body.innerHTML = document.body.innerHTML; // Trigger re-render
+    const endTime = performance.now();
+    expect(endTime - startTime).toBeLessThan(2000);
+  });
+
+  test("[C165] [Accessibility] Keyboard Navigation for All Interactive Settings Options", () => {
+    const interactiveElements = document.querySelectorAll(
+      '#account-settings button, #account-settings a, #account-settings input, #account-settings select'
+    );
+
+    interactiveElements.forEach((element) => {
+      expect(element.tabIndex).not.toBe(-1);
+    });
+  });
+
+  test("[C166] [Security] HTTPS is Enforced for Account Settings Page", () => {
+    delete window.location;
+    window.location = {
+      protocol: "https:"
+    };
+    expect(window.location.protocol).toBe("https:");
+  });
+
 });

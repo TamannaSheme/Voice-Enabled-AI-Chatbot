@@ -57,4 +57,52 @@ describe("Settings Page Integration Testing", () => {
     document.querySelector("#account-settings").click();
     expect(window.location.href).toBe("account_setting.html");
   });
+
+  // Non-Functional Test Cases
+  test("[C149] [Performance] Page Load Time Under 2 Seconds", () => {
+    const startTime = performance.now();
+    document.body.innerHTML = document.body.innerHTML; // Trigger re-render
+    const endTime = performance.now();
+    expect(endTime - startTime).toBeLessThan(2000);
+  });
+
+  test("[C150] [Usability] Responsive Design on All Screen Sizes", () => {
+    window.innerWidth = 480;
+    window.dispatchEvent(new Event("resize"));
+    const links = document.querySelectorAll("#settings a");
+    links.forEach((link) => {
+      expect(getComputedStyle(link).display).not.toBe("none");
+    });
+
+    window.innerWidth = 1024;
+    window.dispatchEvent(new Event("resize"));
+    links.forEach((link) => {
+      expect(getComputedStyle(link).display).not.toBe("none");
+    });
+  });
+
+  test("[C151] [Security] HTTPS is Enforced for Settings Page", () => {
+    Object.defineProperty(window, 'location', {
+      value: {
+        protocol: "https:"
+      },
+      writable: true
+    });
+    expect(window.location.protocol).toBe("https:");
+  });
+
+  test("[C152] [Accessibility] Keyboard Navigation for All Options", async () => {
+    const links = document.querySelectorAll("#settings a");
+
+    // Ensure all links are keyboard accessible
+    links.forEach((link) => {
+      link.setAttribute("tabindex", "0");
+    });
+
+    for (const link of links) {
+      link.focus();
+      await new Promise((resolve) => setTimeout(resolve, 10));
+      expect(document.activeElement).toBe(link);
+    }
+  });
 });

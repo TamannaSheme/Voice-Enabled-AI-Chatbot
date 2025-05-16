@@ -70,4 +70,26 @@ describe("FAQ Page Integration Testing", () => {
     const faqContainer = document.querySelector(".faq-container");
     expect(getComputedStyle(faqContainer).flexDirection).toBe("column");
   });
+
+    // Non-Functional Test Cases
+  test("[C167] [Performance] Page Load Time Under 2 Seconds", () => {
+    const start = performance.now();
+    document.body.innerHTML = document.body.innerHTML;
+    const end = performance.now();
+    expect(end - start).toBeLessThan(2000);
+  });
+
+  test("[C168] [Usability] FAQ Accessibility via Keyboard Navigation", () => {
+    const faqItem = document.querySelector(".faq-item");
+    faqItem.setAttribute("tabindex", "0");
+    faqItem.focus();
+    expect(document.activeElement).toBe(faqItem);
+  });
+
+  test("[C169] [Responsiveness] FAQ Layout Adjusts Properly on Various Screen Sizes", () => {
+    window.innerWidth = 480;
+    window.dispatchEvent(new Event('resize'));
+    const faqContainer = document.querySelector(".faq-container");
+    expect(getComputedStyle(faqContainer).flexDirection).toBe("column");
+  });
 });

@@ -77,4 +77,43 @@ describe("Preferences Settings Page Integration Testing", () => {
     expect(window.saveSettings).toHaveBeenCalled();
   });
 
+  // Non-Functional Test Cases
+  test("[C156] [Performance] Save Changes Response Time Under 1 Second", () => {
+    const startTime = performance.now();
+    document.getElementById("save-button").click();
+    const endTime = performance.now();
+    expect(endTime - startTime).toBeLessThan(1000);
+  });
+
+  test("[C157] [Accessibility] Keyboard Navigation for All Options", async () => {
+    const elements = document.querySelectorAll(
+      "#preferences-settings select, #preferences-settings button, #preferences-settings a"
+    );
+
+    elements.forEach((element) => {
+      element.setAttribute("tabindex", "0");
+    });
+
+    for (const element of elements) {
+      element.focus();
+      await new Promise((resolve) => setTimeout(resolve, 10));
+      expect(document.activeElement).toBe(element);
+    }
+  });
+
+  test("[C158] [Usability] Preferences Display Consistency Across Devices", () => {
+    // Simulate different screen sizes
+    window.innerWidth = 480;
+    window.dispatchEvent(new Event("resize"));
+    const elements = document.querySelectorAll("#preferences-settings *");
+    elements.forEach((element) => {
+      expect(getComputedStyle(element).display).not.toBe("none");
+    });
+
+    window.innerWidth = 1024;
+    window.dispatchEvent(new Event("resize"));
+    elements.forEach((element) => {
+      expect(getComputedStyle(element).display).not.toBe("none");
+    });
+  });
 });

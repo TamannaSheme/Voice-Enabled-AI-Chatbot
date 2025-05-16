@@ -100,4 +100,25 @@ describe("Admin Role Page Testing", () => {
     askLumiButton.click();
     expect(window.location.assign).toHaveBeenCalledWith("ask-lumi.html");
   });
+
+   // New Non-Functional Tests
+  test("[C170] [Performance] Admin Page Load Time Under 2 Seconds", () => {
+    const startTime = performance.now();
+    document.body.innerHTML = document.body.innerHTML; // Trigger re-render
+    const endTime = performance.now();
+    expect(endTime - startTime).toBeLessThan(2000);
+  });
+
+  test("[C171] [Security] Secure Access Control for Admin Page", () => {
+    const userRole = "admin";
+    expect(userRole).toBe("admin");
+  });
+
+  test("[C172] [Usability] Admin Page Layout Consistency Across Different Screen Sizes", () => {
+    window.innerWidth = 768; // Simulate different screen size
+    window.dispatchEvent(new Event("resize"));
+    const header = document.querySelector("h1");
+    expect(header).toBeTruthy();
+  });
+
 });

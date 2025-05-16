@@ -73,5 +73,40 @@ describe("Voice Settings Page Integration Testing", () => {
     link.click();
     expect(link.getAttribute("href")).toBe("#");
   });
+// Non-Functional Test Cases
+  test("[C153] [Performance] Save Changes Response Time Under 1 Second", () => {
+    const startTime = performance.now();
+    document.getElementById("save-button").click();
+    const endTime = performance.now();
+    expect(endTime - startTime).toBeLessThan(1000);
+  });
 
+  test("[C154] [Accessibility] Keyboard Navigation for All Options", async () => {
+    const elements = document.querySelectorAll(
+      "#voice-settings input, #voice-settings select, #voice-settings button, #voice-settings a"
+    );
+
+    // Ensure keyboard accessibility
+    elements.forEach((element) => {
+      element.setAttribute("tabindex", "0");
+    });
+
+    for (const element of elements) {
+      element.focus();
+      await new Promise((resolve) => setTimeout(resolve, 10));
+      expect(document.activeElement).toBe(element);
+    }
+  });
+
+  test("[C155] [Usability] Speech Mode Option is Responsive", () => {
+    // Simulate different screen sizes
+    window.innerWidth = 480;
+    window.dispatchEvent(new Event("resize"));
+    const select = document.getElementById("speech-mode");
+    expect(getComputedStyle(select).display).not.toBe("none");
+
+    window.innerWidth = 1024;
+    window.dispatchEvent(new Event("resize"));
+    expect(getComputedStyle(select).display).not.toBe("none");
+  });
 });

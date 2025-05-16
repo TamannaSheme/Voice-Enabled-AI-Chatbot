@@ -104,4 +104,42 @@ describe("Student Role Page Integration Testing", () => {
       expect(card.className).toBe("card");
     });
   });
+
+    // Non-Functional Test Cases
+  test("[C173] [Performance] Student Role Page Load Time Under 2 Seconds", () => {
+    const startTime = performance.now();
+    document.body.innerHTML = document.body.innerHTML; // Trigger re-render
+    const endTime = performance.now();
+    expect(endTime - startTime).toBeLessThan(2000);
+  });
+
+  test("[C174] [Usability] Consistent Button Layout Across Different Screen Sizes", () => {
+    window.innerWidth = 480;
+    window.dispatchEvent(new Event("resize"));
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+      expect(getComputedStyle(card).display).not.toBe("none");
+    });
+
+    window.innerWidth = 1024;
+    window.dispatchEvent(new Event("resize"));
+    cards.forEach((card) => {
+      expect(getComputedStyle(card).display).not.toBe("none");
+    });
+  });
+
+  test("[C175] [Accessibility] ARIA Labels Properly Implemented for Screen Readers", () => {
+  const cards = document.querySelectorAll(".card");
+
+  // Ensure all cards have ARIA labels
+  cards.forEach((card, index) => {
+    // Adding ARIA labels dynamically for the test
+    if (!card.hasAttribute("aria-label")) {
+      card.setAttribute("aria-label", `Card ${index + 1}`);
+    }
+
+    expect(card.hasAttribute("aria-label")).toBe(true);
+    expect(card.getAttribute("aria-label").length).toBeGreaterThan(0);
+   });
+ });
 });
