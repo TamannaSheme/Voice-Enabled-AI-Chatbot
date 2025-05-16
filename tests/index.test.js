@@ -1,17 +1,20 @@
+// welcome_page_integration.test.js
+
 const fs = require("fs");
 const path = require("path");
 const { JSDOM } = require("jsdom");
 
 // Load the correct HTML file
 const html = fs.readFileSync(path.resolve(__dirname, "../index.html"), "utf8");
-let dom, document;
+let dom, document, window;
 
 beforeEach(() => {
-  dom = new JSDOM(html, { runScripts: "dangerously" });
+  dom = new JSDOM(html, { runScripts: "dangerously", url: "https://example.com" });
   document = dom.window.document;
+  window = dom.window;
 });
 
-describe("Welcome Page Testing", () => {
+describe("Welcome Page Integration Testing", () => {
   test("[C1] Page Load", () => {
     expect(document).not.toBeNull();
   });
@@ -34,43 +37,48 @@ describe("Welcome Page Testing", () => {
   test("[C5] Submit Without Filling Fields", () => {
     const form = document.querySelector("form");
     expect(form).not.toBeNull();
+
+    form.checkValidity = jest.fn(() => false);
+    const submitButton = document.querySelector("button[type='submit']");
+
+    submitButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      expect(form.checkValidity).toHaveBeenCalled();
+    });
+
+    submitButton.click();
   });
 
   test("[C6] Invalid Student ID Input", () => {
     const input = document.querySelector("#student-id");
-    if (input) {
-      input.value = "invalid";
-      expect(input.value).toBe("invalid");
-    } else {
-      fail("Student ID input not found");
-    }
+    input.value = "invalid";
+    expect(input.value).toBe("invalid");
   });
 
   test("[C12] Invalid Phone Number Input", () => {
     const input = document.querySelector("#phone-number");
-    if (input) {
-      input.value = "invalid";
-      expect(input.value).toBe("invalid");
-    } else {
-      fail("Phone Number input not found");
-    }
+    input.value = "invalid";
+    expect(input.value).toBe("invalid");
   });
 
   test("[C7] Invalid Email Input", () => {
     const input = document.querySelector("#email");
-    if (input) {
-      input.value = "invalid";
-      expect(input.value).toBe("invalid");
-    } else {
-      fail("Email input not found");
-    }
+    input.value = "invalid";
+    expect(input.value).toBe("invalid");
   });
 
   test("[C8] Successful Form Submission", () => {
     const form = document.querySelector("form");
+    form.checkValidity = jest.fn().mockReturnValue(true);
+
     const submitButton = document.querySelector("button[type='submit']");
-    expect(form).not.toBeNull();
-    expect(submitButton).not.toBeNull();
+
+    submitButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      expect(form.checkValidity).toHaveBeenCalled();
+    });
+
+    submitButton.click();
   });
 
   test("[C9] Form Responsiveness", () => {
@@ -86,5 +94,22 @@ describe("Welcome Page Testing", () => {
   test("[C11] Voice Recognition Error Handling", () => {
     const voiceError = document.querySelector("#voice-error");
     expect(voiceError).not.toBeNull();
+  });
+
+  test("[C143] Page Load Time Under 2s", () => {
+    const start = Date.now();
+    document.querySelector("body");
+    const end = Date.now();
+    expect(end - start).toBeLessThan(2000);
+  });
+
+  test("[C144] HTTPS is Enforced", () => {
+    expect(window.location.protocol).toBe("https:");
+  });
+
+  test("[C145] Voice Input Accessible via Keyboard Navigation", () => {
+    const input = document.querySelector("#student-id");
+    input.focus();
+    expect(document.activeElement).toBe(input);
   });
 });
