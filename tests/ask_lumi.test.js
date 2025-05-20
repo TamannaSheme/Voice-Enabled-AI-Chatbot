@@ -24,6 +24,11 @@ beforeEach(() => {
     <input type="text" id="question" />
     <button class="button-orange" onclick="respondToUser()">Submit</button>
     <button class="button-orange" onclick="startVoice()">Voice Input</button>
+    <a href="faq.html" id="faq-link">FAQ</a>
+    <a href="reset-password.html" id="reset-link">Reset Password</a>
+    <button id="clearChatBtn" onclick="clearChat()">Clear Chat</button>
+    <button id="endChatBtn" onclick="endChat()">End Chat</button>
+    <button class="settings-btn">⚙️</button>
   `;
 
   window.respondToUser = () => {
@@ -43,6 +48,9 @@ beforeEach(() => {
     }
   };
 
+  window.clearChat = jest.fn();
+  window.endChat = jest.fn();
+
   window.startVoice = async () => {
     try {
       await navigator.mediaDevices.getUserMedia();
@@ -51,7 +59,6 @@ beforeEach(() => {
       document.querySelector(".error-message").textContent = "Microphone access denied";
     }
   };
-
 });
 
 describe("Ask Lumi Page Complete Integration Testing", () => {
@@ -109,5 +116,58 @@ describe("Ask Lumi Page Complete Integration Testing", () => {
     await window.startVoice();
     expect(document.querySelector(".success-message").textContent).toBe("Voice command recognized");
   });
+   test("[C204] Verify Page Loads Successfully", () => {
+    expect(document.querySelector("h1").textContent).toBe("Ask Lumi a New Question");
+  });
 
+  test("[C205] Verify FAQ Menu Option", () => {
+    const faqLink = document.querySelector("#faq-link");
+    expect(faqLink).not.toBeNull();
+    expect(faqLink.href).toContain("faq.html");
+  });
+
+  test("[C206] Verify Reset Password Option", () => {
+    const resetLink = document.querySelector("#reset-link");
+    expect(resetLink).not.toBeNull();
+    expect(resetLink.href).toContain("reset-password.html");
+  });
+
+  test("[C207] Verify Clear Chat Option", () => {
+    const clearBtn = document.getElementById("clearChatBtn");
+    clearBtn.click();
+    expect(window.clearChat).toHaveBeenCalled();
+  });
+
+  test("[C209] Verify End Chat Option", () => {
+    const endBtn = document.getElementById("endChatBtn");
+    endBtn.click();
+    expect(window.endChat).toHaveBeenCalled();
+  });
+
+  test("[C210] Verify Message Sending (Text Input)", () => {
+    document.getElementById("question").value = "Hello";
+    window.respondToUser();
+    expect(document.querySelector(".success-message").textContent).toBe("Question submitted successfully");
+  });
+
+  test("[C211] Verify Message Sending (Voice Input - Enabled)", async () => {
+    await window.startVoice();
+    expect(microphoneMock).toHaveBeenCalled();
+  });
+
+  test("[C212] Verify Voice Input Toggle (Enabled)", () => {
+    const voiceBtn = document.querySelector("button[onclick='startVoice()']");
+    expect(voiceBtn).not.toBeNull();
+  });
+
+  test("[C213] Verify Settings Menu Accessibility", () => {
+    const settingsBtn = document.querySelector(".settings-btn");
+    expect(settingsBtn).not.toBeNull();
+  });
+
+  test("[C214] Verify Voice Input Toggle (Disabled)", async () => {
+    microphoneMock.mockRejectedValue(new Error("Microphone access denied"));
+    await window.startVoice();
+    expect(document.querySelector(".error-message").textContent).toBe("Microphone access denied");
+  });
 });
