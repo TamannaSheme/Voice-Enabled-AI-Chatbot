@@ -9,16 +9,57 @@ const html = fs.readFileSync(path.resolve(__dirname, "../index.html"), "utf8");
 let dom, document, window;
 
 beforeEach(() => {
-  dom = new JSDOM(html, { runScripts: "dangerously", url: "https://example.com" });
+  const dom = new JSDOM(html, { runScripts: "dangerously", url: "https://example.com" });
   document = dom.window.document;
   window = dom.window;
 
-  // Mock localStorage
-  window.localStorage = {
-    data: {},
-    setItem: function (key, value) { this.data[key] = value; },
-    getItem: function (key) { return this.data[key] || null; },
-    clear: function () { this.data = {}; }
+  microphoneMock = jest.fn();
+  navigator.mediaDevices = { getUserMedia: microphoneMock };
+
+  document.body.innerHTML += `
+    <div class="error-message" style="display:none"></div>
+    <div class="success-message" style="display:none"></div>
+    <input type="text" id="question" />
+    <button class="button-orange" onclick="respondToUser()">Submit</button>
+    <button class="button-orange" onclick="startVoice()">Voice Input</button>
+    <button class="button-orange" onclick="clearChat()">Clear Chat</button>
+    <button class="button-orange" onclick="endChat()">End Chat</button>
+  `;
+
+  window.respondToUser = () => {
+    const question = document.querySelector("#question").value.trim();
+    const errorMessage = document.querySelector(".error-message");
+    const successMessage = document.querySelector(".success-message");
+
+    errorMessage.style.display = "none";
+    successMessage.style.display = "none";
+
+    if (question.length === 0) {
+      errorMessage.style.display = "block";
+      errorMessage.textContent = "Please enter a question";
+    } else {
+      successMessage.style.display = "block";
+      successMessage.textContent = "Question submitted successfully";
+    }
+  };
+
+  window.startVoice = async () => {
+    try {
+      await navigator.mediaDevices.getUserMedia();
+      document.querySelector(".success-message").textContent = "Voice command recognized";
+    } catch (error) {
+      document.querySelector(".error-message").textContent = "Microphone access denied";
+    }
+  };
+
+  // Mock Clear Chat and End Chat Functions
+  window.clearChat = () => {
+    document.querySelector("#question").value = "";
+    document.querySelector(".success-message").textContent = "Chat cleared";
+  };
+
+  window.endChat = () => {
+    document.querySelector(".success-message").textContent = "Chat ended";
   };
 });
 

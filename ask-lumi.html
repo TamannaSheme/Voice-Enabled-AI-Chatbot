@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -18,7 +18,6 @@
       font-size: 28px;
       cursor: pointer;
       font-weight: bold;
-      aria-label: "Settings Button";
     }
 
     .settings-dropdown {
@@ -32,19 +31,24 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       z-index: 10000;
       min-width: 180px;
-      aria-label: "Settings Dropdown";
     }
 
-    .settings-dropdown a {
+    .settings-dropdown a,
+    .settings-dropdown button {
       display: block;
+      width: 100%;
       padding: 10px 15px;
-      color: #333;
-      text-decoration: none;
+      background: none;
+      border: none;
+      text-align: left;
       font-size: 14px;
-      aria-label: "Settings Option";
+      color: #333;
+      cursor: pointer;
+      text-decoration: none;
     }
 
-    .settings-dropdown a:hover {
+    .settings-dropdown a:hover,
+    .settings-dropdown button:hover {
       background-color: #f2f2f2;
     }
   </style>
@@ -52,10 +56,12 @@
 <body>
   <div class="chat-container" style="position: relative;">
     <div class="settings-menu">
-      <button class="settings-btn" aria-label="Settings" onclick="toggleSettings()">⚙️</button>
-      <div class="settings-dropdown" id="settingsDropdown" role="menu" aria-hidden="true">
-        <a href="faq.html" aria-label="FAQ">📚 FAQ</a>
-        <a href="reset-password.html" aria-label="Reset Password">🔐 Reset Password</a>
+      <button class="settings-btn" onclick="toggleSettings()">⚙️</button>
+      <div class="settings-dropdown" id="settingsDropdown">
+        <a href="faq.html">📚 FAQ</a>
+        <a href="reset-password.html">🔐 Reset Password</a>
+        <button onclick="clearChat()">🗑️ Clear Chat</button>
+        <button onclick="endChat()">🔁 End Chat</button>
       </div>
     </div>
 
@@ -64,34 +70,53 @@
       <h1>Ask Lumi a New Question</h1>
     </header>
 
-    <div id="chat-messages" class="chat-box" role="log" aria-live="polite">
+    <div id="chat-messages" class="chat-box">
       <!-- Messages will appear here -->
     </div>
 
     <div class="input-area-row">
-      <textarea id="question" placeholder="Ask your question here..." aria-label="Question Input"></textarea>
-      <button onclick="startVoice('question')" class="button-orange" aria-label="Start Voice Input">🎤</button>
-      <button onclick="respondToUser()" class="button-orange" aria-label="Submit Question">➤</button>
+      <textarea id="question" placeholder="Ask your question here..."></textarea>
+      <button onclick="startVoice('question')" class="button-orange">🎤</button>
+      <button onclick="respondToUser()" class="button-orange">➤</button>
     </div>
   </div>
 
-  <script src="js/ask-lumi.js"></script>
   <script>
     function toggleSettings() {
       const dropdown = document.getElementById("settingsDropdown");
-      dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
-      dropdown.setAttribute("aria-hidden", dropdown.style.display === "none" ? "true" : "false");
+      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
     }
 
-    window.addEventListener('click', function(e) {
-      if (!e.target.matches('.settings-btn')) {
-        const dropdown = document.getElementById("settingsDropdown");
-        if (dropdown && dropdown.style.display === "block") {
-          dropdown.style.display = "none";
-          dropdown.setAttribute("aria-hidden", "true");
-        }
+    function clearChat() {
+      document.getElementById("chat-messages").innerHTML = "";
+      alert("Chat cleared");
+    }
+
+    function endChat() {
+      document.getElementById("chat-messages").innerHTML = "<p>Chat has ended.</p>";
+      alert("Chat ended");
+    }
+
+    function startVoice(fieldId) {
+      const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+      recognition.lang = "en-US";
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      recognition.start();
+      recognition.onresult = (event) => {
+        document.getElementById(fieldId).value = event.results[0][0].transcript;
+      };
+    }
+
+    function respondToUser() {
+      const question = document.getElementById("question").value.trim();
+      if (question) {
+        document.getElementById("chat-messages").innerHTML += `<p>User: ${question}</p>`;
+      } else {
+        alert("Please enter a question");
       }
-    });
+    }
   </script>
 </body>
 </html>

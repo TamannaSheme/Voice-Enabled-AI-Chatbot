@@ -2,8 +2,9 @@
   "name": "voice-enabled-ai-chatbot",
   "version": "1.0.0",
   "type": "commonjs",
-  "scripts": {
-    "test": "jest tests/logic.unit.test.js tests/reset_password.test.js tests/voice_setting.test.js --reporters=default --reporters=./customJestReporter.js"
+  "scripts": { 
+   "test": "jest --reporters=default --reporters=./customJestReporter.js"
+
   },
   "devDependencies": {
     "@babel/core": "^7.27.1",
@@ -17,6 +18,24 @@
     "jsdom": "^26.1.0"
   },
   "jest": {
-    "testEnvironment": "jsdom"
-  }
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/tests/**/*.test.js"
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "<rootDir>/coverage",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    }
+  }
 }
