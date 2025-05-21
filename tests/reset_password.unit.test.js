@@ -21,31 +21,31 @@ describe("Reset Password Page Unit Testing", () => {
     document.getElementById("submit-button").onclick = validatePassword;
   });
 
-  test("[U01] Validate Username Input", () => {
+  test("[U99] Validate Username Input", () => {
     const input = document.getElementById("username");
     input.value = "user@example.com";
     expect(input.value).toBe("user@example.com");
   });
 
-  test("[U02] Validate New Password Input", () => {
+  test("[U100] Validate New Password Input", () => {
     const input = document.getElementById("newPassword");
     input.value = "SecurePass123";
     expect(input.value).toBe("SecurePass123");
   });
 
-  test("[U03] Validate Confirm Password Input", () => {
+  test("[U101] Validate Confirm Password Input", () => {
     const input = document.getElementById("confirmPassword");
     input.value = "SecurePass123";
     expect(input.value).toBe("SecurePass123");
   });
 
-  test("[U04] Trigger Form Validation", () => {
+  test("[U102] Trigger Form Validation", () => {
     const submitButton = document.getElementById("submit-button");
     submitButton.click();
     expect(validatePassword).toHaveBeenCalled();
   });
 
-  test("[U05] Reset Form After Submission", () => {
+  test("[U103] Reset Form After Submission", () => {
     const form = document.getElementById("resetForm");
     form.reset = resetForm;
     form.reset();

@@ -24,24 +24,23 @@ describe("Settings Page Unit Testing", () => {
     window.navigateTo = navigateTo;
   });
 
-  test("[U01] Navigate to Voice Settings", () => {
+  test("[U91] Navigate to Voice Settings", () => {
     document.querySelector("#voice-settings").click();
     expect(navigateTo).toHaveBeenCalledWith("voice_setting.html");
   });
 
-  test("[U02] Navigate to Preferences Settings", () => {
+  test("[U92] Navigate to Preferences Settings", () => {
     document.querySelector("#preferences-settings").click();
     expect(navigateTo).toHaveBeenCalledWith("preferences_setting.html");
   });
 
-  test("[U03] Navigate to Notifications Settings", () => {
+  test("[U93] Navigate to Notifications Settings", () => {
     document.querySelector("#notifications-settings").click();
     expect(navigateTo).toHaveBeenCalledWith("notifications_setting.html");
   });
 
-  test("[U04] Navigate to Account Settings", () => {
+  test("[U94] Navigate to Account Settings", () => {
     document.querySelector("#account-settings").click();
     expect(navigateTo).toHaveBeenCalledWith("account_setting.html");
   });
-
 });
