@@ -29,27 +29,26 @@ describe("Preferences Settings Page Unit Testing", () => {
     document.getElementById("save-button").onclick = saveSettings;
   });
 
-  test("[U01] Change Theme Preference", () => {
+  test("[U55] Change Theme Preference", () => {
     const theme = document.getElementById("theme");
     theme.value = "dark";
     expect(theme.value).toBe("dark");
   });
 
-  test("[U02] Change Font Size", () => {
+  test("[U56] Change Font Size", () => {
     const fontSize = document.getElementById("font-size");
     fontSize.value = "large";
     expect(fontSize.value).toBe("large");
   });
 
-  test("[U03] Change App Language", () => {
+  test("[U57] Change App Language", () => {
     const language = document.getElementById("language");
     language.value = "es";
     expect(language.value).toBe("es");
   });
 
-  test("[U04] Save Settings Functionality", () => {
+  test("[U58] Save Settings Functionality", () => {
     document.getElementById("save-button").click();
     expect(saveSettings).toHaveBeenCalled();
   });
-
 });
