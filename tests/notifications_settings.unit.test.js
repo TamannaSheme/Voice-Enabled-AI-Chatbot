@@ -22,27 +22,26 @@ describe("Notifications Settings Page Unit Testing", () => {
     document.getElementById("save-button").onclick = saveSettings;
   });
 
-  test("[U01] Toggle Push Notifications", () => {
+  test("[U51] Toggle Push Notifications", () => {
     const checkbox = document.getElementById("push-notifications");
     checkbox.checked = true;
     expect(checkbox.checked).toBe(true);
   });
 
-  test("[U02] Toggle Email Alerts", () => {
+  test("[U52] Toggle Email Alerts", () => {
     const checkbox = document.getElementById("email-alerts");
     checkbox.checked = true;
     expect(checkbox.checked).toBe(true);
   });
 
-  test("[U03] Change Sound Option", () => {
+  test("[U53] Change Sound Option", () => {
     const select = document.getElementById("sound");
     select.value = "off";
     expect(select.value).toBe("off");
   });
 
-  test("[U04] Save Settings Functionality", () => {
+  test("[U54] Save Settings Functionality", () => {
     document.getElementById("save-button").click();
     expect(saveSettings).toHaveBeenCalled();
   });
-
 });
