@@ -6,7 +6,6 @@ describe("Instructor Page Unit Testing", () => {
   let mockNavigate;
 
   beforeEach(() => {
-    // Mock window.location.assign for clean unit testing
     mockNavigate = jest.fn();
     Object.defineProperty(window, 'location', {
       value: {
@@ -20,9 +19,8 @@ describe("Instructor Page Unit Testing", () => {
     jest.clearAllMocks();
   });
 
-  // Function to Test: handleInstructorNavigation
   const handleInstructorNavigation = (action) => {
-    switch(action) {
+    switch (action) {
       case "manage-courses":
         window.location.assign("manage-courses.html");
         break;
@@ -46,37 +44,37 @@ describe("Instructor Page Unit Testing", () => {
     }
   };
 
-  test("should navigate to Manage Courses page", () => {
+  test("[U11] Navigate to Manage Courses page", () => {
     handleInstructorNavigation("manage-courses");
     expect(mockNavigate).toHaveBeenCalledWith("manage-courses.html");
   });
 
-  test("should navigate to Upload Materials page", () => {
+  test("[U12] Navigate to Upload Materials page", () => {
     handleInstructorNavigation("upload-materials");
     expect(mockNavigate).toHaveBeenCalledWith("upload-materials.html");
   });
 
-  test("should navigate to Grade Submissions page", () => {
+  test("[U13] Navigate to Grade Submissions page", () => {
     handleInstructorNavigation("grade-submissions");
     expect(mockNavigate).toHaveBeenCalledWith("grade-submissions.html");
   });
 
-  test("should navigate to Set Deadlines page", () => {
+  test("[U14] Navigate to Set Deadlines page", () => {
     handleInstructorNavigation("set-deadlines");
     expect(mockNavigate).toHaveBeenCalledWith("set-deadlines.html");
   });
 
-  test("should navigate to Announcements page", () => {
+  test("[U15] Navigate to Announcements page", () => {
     handleInstructorNavigation("announcements");
     expect(mockNavigate).toHaveBeenCalledWith("announcements.html");
   });
 
-  test("should navigate to Ask Lumi page", () => {
+  test("[U16] Navigate to Ask Lumi page", () => {
     handleInstructorNavigation("ask-lumi");
     expect(mockNavigate).toHaveBeenCalledWith("ask-lumi.html");
   });
 
-  test("should throw an error for invalid action", () => {
+  test("[U17] Throw error for invalid instructor action", () => {
     expect(() => handleInstructorNavigation("invalid-action")).toThrow("Invalid instructor action");
   });
 });
