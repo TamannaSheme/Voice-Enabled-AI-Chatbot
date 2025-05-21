@@ -42,7 +42,7 @@ describe("Ask Lumi Page Unit Testing", () => {
     });
   });
 
-  test("[U01] Submit Question Successfully", () => {
+  test("[U31] Submit Question Successfully", () => {
     document.querySelector("#question").value = "What is Lumi?";
     respondToUser();
 
@@ -50,20 +50,20 @@ describe("Ask Lumi Page Unit Testing", () => {
     expect(successMessage.textContent).toBe("Question submitted successfully");
   });
 
-  test("[U02] Submit Without Question", () => {
+  test("[U32] Submit Without Question", () => {
     respondToUser();
 
     const errorMessage = document.querySelector(".error-message");
     expect(errorMessage.textContent).toBe("Please enter a question");
   });
 
-  test("[U03] Voice Input - Microphone Access Granted", async () => {
+  test("[U33] Voice Input - Microphone Access Granted", async () => {
     await startVoice();
 
     expect(microphoneMock).toHaveBeenCalled();
   });
 
-  test("[U04] Voice Input - Microphone Access Denied", async () => {
+  test("[U34] Voice Input - Microphone Access Denied", async () => {
     microphoneMock.mockRejectedValue(new Error("Microphone access denied"));
 
     await startVoice();
