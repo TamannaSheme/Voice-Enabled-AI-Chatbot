@@ -8,7 +8,6 @@ describe("handleRole Function Unit Test", () => {
   let mockNavigate;
 
   beforeEach(() => {
-    // Mock window.location.assign for clean unit testing
     mockNavigate = jest.fn();
     Object.defineProperty(window, 'location', {
       value: {
@@ -22,7 +21,6 @@ describe("handleRole Function Unit Test", () => {
     jest.clearAllMocks();
   });
 
-  // The handleRole function logic (pure function test)
   const handleRole = (role) => {
     if (role === "student") {
       window.location.assign("student.html");
@@ -35,22 +33,22 @@ describe("handleRole Function Unit Test", () => {
     }
   };
 
-  test("should navigate to student page", () => {
+  test("[U95] Navigate to Student page", () => {
     handleRole("student");
     expect(mockNavigate).toHaveBeenCalledWith("student.html");
   });
 
-  test("should navigate to admin page", () => {
+  test("[U96] Navigate to Admin page", () => {
     handleRole("admin");
     expect(mockNavigate).toHaveBeenCalledWith("admin.html");
   });
 
-  test("should navigate to instructor page", () => {
+  test("[U97] Navigate to Instructor page", () => {
     handleRole("instructor");
     expect(mockNavigate).toHaveBeenCalledWith("instructor.html");
   });
 
-  test("should throw an error for invalid role", () => {
+  test("[U98] Throw error for invalid role", () => {
     expect(() => handleRole("invalid")).toThrow("Invalid role");
   });
 });

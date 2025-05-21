@@ -26,33 +26,32 @@ describe("Voice Settings Page Unit Testing", () => {
     document.getElementById("save-button").onclick = saveSettings;
   });
 
-  test("[U01] Toggle Voice Input", () => {
+  test("[U71] Toggle Voice Input", () => {
     const checkbox = document.getElementById("voice-input");
     checkbox.checked = true;
     expect(checkbox.checked).toBe(true);
   });
 
-  test("[U02] Change Speech Mode", () => {
+  test("[U72] Change Speech Mode", () => {
     const select = document.getElementById("speech-mode");
     select.value = "speech-to-text";
     expect(select.value).toBe("speech-to-text");
   });
 
-  test("[U03] Change Language Option", () => {
+  test("[U73] Change Language Option", () => {
     const select = document.getElementById("language");
     select.value = "es";
     expect(select.value).toBe("es");
   });
 
-  test("[U04] Toggle Auto-Delete Option", () => {
+  test("[U74] Toggle Auto-Delete Option", () => {
     const checkbox = document.getElementById("auto-delete");
     checkbox.checked = true;
     expect(checkbox.checked).toBe(true);
   });
 
-  test("[U05] Save Settings Functionality", () => {
+  test("[U75] Save Settings Functionality", () => {
     document.getElementById("save-button").click();
     expect(saveSettings).toHaveBeenCalled();
   });
-
 });

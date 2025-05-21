@@ -1,7 +1,4 @@
-/**
- * Created by Afreen Mohammed
- * Voice Command Handling Test
- */
+
 function mockVoiceCommand(command) {
   return command === "hello" ? "Hi, how can I help you?" : "Sorry, repeat please.";
 }
